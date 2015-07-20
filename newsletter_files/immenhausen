@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Immenhausen';
+    src: url('immenhausen-regular-webfont.eot');
+    src: url('immenhausen-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('immenhausen-regular-webfont.woff2') format('woff2'),
+         url('immenhausen-regular-webfont.woff') format('woff'),
+         url('immenhausen-regular-webfont.ttf') format('truetype'),
+         url('immenhausen-regular-webfont.svg#immenhausenregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

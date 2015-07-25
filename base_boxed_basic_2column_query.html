@@ -212,11 +212,27 @@
 				font-weight:bold;
 				line-height:100%;
 				padding-top:0px;
-				padding-right:13px;
-				padding-bottom:13px;
-				padding-left:13px;
 				text-align:center;
 				vertical-align:middle;
+			}
+
+			#preheader_regionalleiste {
+				background-color: #1D4899;
+				color: #FFCA28;
+				padding-left: 13px;
+				padding-right: 13px;
+				display:block;
+				font-family: Immenhausen, Georgia, Times New Roman, Courier, serif;
+				font-size:16px;
+				font-style:normal;
+				font-weight:normal;
+				line-height:150%;
+				/*@editable*/ letter-spacing:normal;
+				margin-top:0;
+				margin-right:0;
+				margin-bottom:0;
+				margin-left:0;
+				text-align:center;
 			}
 
 			/**
@@ -251,7 +267,7 @@
 			*/
 			#templateHeader{
 				margin-top: -50px;
-				z-index: 50sour;
+				z-index: 50;
 			}
 
 			/**
@@ -519,9 +535,10 @@
 				/* ======== Header Styles ======== */
 
 				#templatePreheader{} /* Hide the template preheader to save space */
-				#preheaderLeft{display:none !important;} /* Hide the template preheader to save space */
-				#preheaderRight{display:none !important;} /* Hide the template preheader to save space */
-				#preheaderMain{width:100% !important;} /* Hide the template preheader to save space */
+				#preheaderLeft{display:none !important;} /* Hide the template preheader left to save space */
+				#preheaderRight{display:none !important;} /* Hide the template preheader to right save space */
+				#preheaderMain{width:100% !important;} 
+				#preheaderMainContent{width:100% !important;} 
 
 				#templateHeader{
 					margin-top: 0px;		
@@ -629,8 +646,20 @@
                                                 Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
                                                 <!-- *|END:IF|* -->
                                             </td>                                            
-                                            <td valign="top" id="preheaderMain" class="preheaderContent" style="padding-top:10px; padding-right:13px; padding-bottom:10px; padding-left:13px;" >
-                                                <img src="http://www.bdp-waraeger.de/newsletter_files/Bundeszeichen_v02.png" style="max-width:180px;" id="logo" mc:label="preheader_image" mc:edit="preheader_image" />
+                                            <td valign="top" id="preheaderMain" class="preheaderContent" style="padding-top:10px;" >                                           	
+                                            	<table border="0" cellpadding="0" cellspacing="0" id="preheaderMainContent">
+                                            		<tr>
+                                            			<td style="padding-right:13px; padding-bottom:10px; padding-left:13px;">
+                                            				<img src="http://www.bdp-waraeger.de/newsletter_files/Bundeszeichen_v02.png" style="max-width:180px;" id="logo" mc:label="preheader_image" mc:edit="preheader_image" />
+                                            			</td>
+                                            		</tr>
+                                            		<tr>
+                                            			<td id="preheader_regionalleiste" style="padding-right:13px; padding-left:13px;" mc:edit="preheader_regionalleiste">
+                                            				Stamm Waräger
+                                            			</td>
+                                            		</tr>                     
+                                            	</table>
+                                                
                                             </td>
                                             <td valign="top" id="preheaderRight" class="preheaderContent" style="padding-top:10px; padding-right:13px; padding-bottom:10px; padding-left:13px;" mc:edit="preheader_content02">
 

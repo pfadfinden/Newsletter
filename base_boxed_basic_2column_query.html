@@ -3,7 +3,7 @@
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>*|MC:SUBJECT|*</title>
-        <link rel="stylesheet" href="http://www.bdp-waraeger.de/newsletter_files/immenhausen" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="http://www.bdp-waraeger.de/newsletter_files/immenhausen.css" type="text/css" charset="utf-8" />
         <style type="text/css">
 			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
 			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
@@ -34,11 +34,11 @@
 			@font-face {
 			    font-family: 'Immenhausen';
 			    src: url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-regular-webfont.eot');
-			    src: url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-regular-webfont.eot?#iefix') format('embedded-opentype'),
-			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-regular-webfont.woff2') format('woff2'),
-			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-regular-webfont.woff') format('woff'),
-			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-regular-webfont.ttf') format('truetype'),
-			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-regular-webfont.svg#immenhausenregular') format('svg');
+			    src: url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.woff2') format('woff2'),
+			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.woff') format('woff'),
+			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.ttf') format('truetype'),
+			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.svg#immenhausenregular') format('svg');
 			    font-weight: normal;
 			    font-style: normal;
 
@@ -64,7 +64,7 @@
 			*/
 			body, #bodyTable{
 				background-color: #E3C182;
-				background-image: url(http://www.pfadfinden.de/fileadmin/buena/img/BG002.jpg);
+				background-image: url(http://www.bdp-waraeger.de/newsletter_files/background.jpg);
 			}
 
 			/**
@@ -124,7 +124,7 @@
 				border: 1px solid #FFCB04;
 				padding: 5px 10px;
 				display:block;
-				font-family: Immenhausen, Georgia, Times New Roman, Courier, serif;
+				font-family: immenhausen, Georgia, Times New Roman, Courier, serif;
 				font-size:20px;
 				font-style:normal;
 				font-weight:bold;
@@ -216,6 +216,10 @@
 				vertical-align:middle;
 			}
 
+			#preheaderMainContent {
+				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+			}
+
 			#preheader_regionalleiste {
 				background-color: #1D4899;
 				color: #FFCA28;
@@ -303,7 +307,7 @@
 			#headerImage{
 				height:auto;
 				max-width:640px;
-				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 				z-index: 50;
 			}
 			#headerTitel {
@@ -641,7 +645,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr> 
                                             
-                                            <td valign="top" id="preheaderLeft"class="preheaderContent" style="padding-top:10px; padding-right:13px; padding-bottom:10px; padding-left:13px;" mc:edit="preheader_content00">
+                                            <td valign="top" id="preheaderLeft"class="preheaderContent" style="padding-top:10px; padding-right:13px; padding-bottom:13px; padding-left:13px;" mc:edit="preheader_content00">
                                             	<!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                                 Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
                                                 <!-- *|END:IF|* -->
@@ -650,15 +654,16 @@
                                             	<table border="0" cellpadding="0" cellspacing="0" id="preheaderMainContent">
                                             		<tr>
                                             			<td style="padding-right:13px; padding-bottom:10px; padding-left:13px;">
-                                            				<img src="http://www.bdp-waraeger.de/newsletter_files/Bundeszeichen_v02.png" style="max-width:180px;" id="logo" mc:label="preheader_image" mc:edit="preheader_image" />
+                                            				<img src="http://www.bdp-waraeger.de/newsletter_files/bundeszeichen_v03.png" style="max-width:180px;" id="logo" mc:label="preheader_image" mc:edit="preheader_image" />
                                             			</td>
                                             		</tr>
                                             		<tr>
                                             			<td id="preheader_regionalleiste" style="padding-right:13px; padding-left:13px;" mc:edit="preheader_regionalleiste">
                                             				Stamm Waräger
                                             			</td>
-                                            		</tr>                     
+                                            		</tr>                                      		                     
                                             	</table>
+
                                                 
                                             </td>
                                             <td valign="top" id="preheaderRight" class="preheaderContent" style="padding-top:10px; padding-right:13px; padding-bottom:10px; padding-left:13px;" mc:edit="preheader_content02">
@@ -795,7 +800,7 @@
                                                 </table>                                            	
                                             </td>
                                         </tr>
-                                        <!-- // END Two Colums With Images -->
+                                        <!-- // END Two Colums With only Text -->
 
                                         <!-- BEGIN Two Columns With image left // -->
                                     	<tr mc:repeatable mc:variant="two columns image left">

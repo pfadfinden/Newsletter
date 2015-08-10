@@ -1,9 +1,10 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>*|MC:SUBJECT|*</title>
-        <link rel="stylesheet" href="http://www.bdp-waraeger.de/newsletter_files/immenhausen.css" type="text/css" charset="utf-8" />
+        <link rel="stylesheet" href="http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen.css" type="text/css" charset="utf-8" />
         <style type="text/css">
 			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
 			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
@@ -21,9 +22,9 @@
 
 			/* apply a natural box layout model to all elements, but allowing components to change */
 			html {
-				-moz-box-sizing: border-box;
-				-webkit-box-sizing: border-box;
-				box-sizing: border-box;
+				-moz-box-sizing: content-box;
+				-webkit-box-sizing: content-box;
+				box-sizing: content-box;
 			}
 			*, *:before, *:after {
 			  box-sizing: inherit;
@@ -33,12 +34,12 @@
 
 			@font-face {
 			    font-family: 'Immenhausen';
-			    src: url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-regular-webfont.eot');
-			    src: url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.eot?#iefix') format('embedded-opentype'),
-			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.woff2') format('woff2'),
-			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.woff') format('woff'),
-			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.ttf') format('truetype'),
-			         url('http://www.bdp-waraeger.de/newsletter_files/immenhausen-webfont.svg#immenhausenregular') format('svg');
+			    src: url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-regular-webfont.eot');
+			    src: url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.eot?#iefix') format('embedded-opentype'),
+			         url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.woff2') format('woff2'),
+			         url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.woff') format('woff'),
+			         url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.ttf') format('truetype'),
+			         url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.svg#immenhausenregular') format('svg');
 			    font-weight: normal;
 			    font-style: normal;
 
@@ -57,19 +58,19 @@
 			#templateContainer{width:640px;}
 
 			/**
-			* @tab Page
-			* @section background style
+			* tab Page
+			* section background style
 			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
 			* @theme page
 			*/
 			body, #bodyTable{
 				background-color: #E3C182;
-				background-image: url(http://www.bdp-waraeger.de/newsletter_files/background.jpg);
+				background-image: url(http://cdn.pfadfinden.de/gfx/backgrounds/holzhintergrund_1.jpg);
 			}
 
 			/**
-			* @tab Page
-			* @section background style
+			* tab Page
+			* section background style
 			* @tip Set the background color and top border for your email. You may want to choose colors that match your company's branding.
 			* @theme page
 			*/
@@ -78,16 +79,16 @@
 			}
 
 			/**
-			* @tab Page
-			* @section email border
+			* tab Page
+			* section email border
 			* @tip Set the border for your email.
 			*/
 			#templateContainer{
 			}
 
 			/**
-			* @tab Page
-			* @section heading 1
+			* tab Page
+			* section heading 1
 			* @tip Set the styling for all first-level headings in your emails. These should be the largest of your headings.
 			* @style heading 1
 			*/
@@ -113,8 +114,8 @@
 			}
 
 			/**
-			* @tab Page
-			* @section heading 2
+			* tab Page
+			* section heading 2
 			* @tip Set the styling for all second-level headings in your emails.
 			* @style heading 2
 			*/
@@ -132,14 +133,14 @@
 				letter-spacing:normal;
 				margin-top:0;
 				margin-right:0;
-				margin-bottom:10px;
+				margin-bottom:0;
 				margin-left:0;
 				text-align:left;
 			}
 
 			/**
-			* @tab Page
-			* @section heading 3
+			* tab Page
+			* section heading 3
 			* @tip Set the styling for all third-level headings in your emails.
 			* @style heading 3
 			*/
@@ -157,14 +158,14 @@
 				letter-spacing:normal;
 				margin-top:0;
 				margin-right:0;
-				margin-bottom:10px;
+				margin-bottom:0;
 				margin-left:0;
 				text-align:left;
 			}
 
 			/**
-			* @tab Page
-			* @section heading 4
+			* tab Page
+			* section heading 4
 			* @tip Set the styling for all fourth-level headings in your emails. These should be the smallest of your headings.
 			* @style heading 4
 			*/
@@ -189,19 +190,19 @@
 			/* ========== Header Styles ========== */
 
 			/**
-			* @tab Header
-			* @section preheader style
+			* tab Header
+			* section preheader style
 			* @tip Set the background color and bottom border for your email's preheader area.
 			* @theme header
 			*/
 			#preheaderLeft {
-				width: 60%;
+				width: 50%;
 			}
 			#preheaderRight {
 				width: 10%;
 			}
 			#preheaderMain{
-				width: 30%;
+				width: 40%;
 				background-color:#FFCB04;
 				position:relative;
 				z-index: 500;
@@ -240,8 +241,8 @@
 			}
 
 			/**
-			* @tab Header
-			* @section preheader text
+			* tab Header
+			* section preheader text
 			* @tip Set the styling for your email's preheader text. Choose a size and color that is easy to read.
 			*/
 			.preheaderContent{
@@ -253,8 +254,8 @@
 			}
 
 			/**
-			* @tab Header
-			* @section preheader link
+			* tab Header
+			* section preheader link
 			* @tip Set the styling for your email's preheader links. Choose a color that helps them stand out from your text.
 			*/
 			.preheaderContent a:link, .preheaderContent a:visited, /* Yahoo! Mail Override */ .preheaderContent a .yshortcuts /* Yahoo! Mail Override */{
@@ -264,8 +265,8 @@
 			}
 
 			/**
-			* @tab Header
-			* @section header style
+			* tab Header
+			* section header style
 			* @tip Set the background color and borders for your email's header area.
 			* @theme header
 			*/
@@ -275,8 +276,8 @@
 			}
 
 			/**
-			* @tab Header
-			* @section header text
+			* tab Header
+			* section header text
 			* @tip Set the styling for your email's header text. Choose a size and color that is easy to read.
 			*/
 			.headerContent{
@@ -294,8 +295,8 @@
 			}
 
 			/**
-			* @tab Header
-			* @section header link
+			* tab Header
+			* section header link
 			* @tip Set the styling for your email's header links. Choose a color that helps them stand out from your text.
 			*/
 			.headerContent a:link, .headerContent a:visited, /* Yahoo! Mail Override */ .headerContent a .yshortcuts /* Yahoo! Mail Override */{
@@ -323,28 +324,30 @@
 			.templateColumnContainer{
 				display: inline;
 				background-color: #FFFFFF;
-				padding-top: 13px;
-				padding-left: 13px;
-				padding-right: 13px;
-				padding-bottom: 13px;
-				margin-bottom: 13px;
+				
+			}
+
+			.templateColumnContainerLeft{
+				display: inline;
+				background-color: #FFFFFF;
+				
 			}
 
 			.columnTwo {
 				width:614px;
-
+				background-color: #FFFFFF;
 			}
 			.columnOne {
 				width:300px;
 			}
 
 			.columnTwoOne {
-				width: 287px;
+				width: 307px;
 			}
 
 			/**
-			* @tab Columns
-			* @section column style
+			* tab Columns
+			* section column style
 			* @tip Set the background color and borders for your email's column area.
 			*/
 			#templateColumns{
@@ -358,8 +361,8 @@
 			}
 
 			/**
-			* @tab Columns
-			* @section left column text
+			* tab Columns
+			* section left column text
 			* @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
 			*/
 			.leftColumnContent{
@@ -369,6 +372,11 @@
 				line-height:150%;
 				text-align:left;
 				z-index: 100;
+				padding-top: 13px;
+				padding-left: 13px;
+				padding-right: 13px;
+				padding-bottom: 13px;
+				margin-bottom: 13px;
 			}
 			.leftColumnHeadline {
 				position: relative;
@@ -377,8 +385,8 @@
 			}
 
 			/**
-			* @tab Columns
-			* @section left column link
+			* tab Columns
+			* section left column link
 			* @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
 			*/
 			.leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
@@ -391,8 +399,8 @@
 			}
 
 			/**
-			* @tab Columns
-			* @section right column text
+			* tab Columns
+			* section right column text
 			* @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
 			*/
 			.rightColumnContent{
@@ -402,6 +410,11 @@
 				line-height:150%;
 				text-align:left;
 				z-index: 100;
+				padding-top: 13px;
+				padding-left: 13px;
+				padding-right: 13px;
+				padding-bottom: 13px;
+				margin-bottom: 13px;
 			}
 			.rightColumnHeadline {
 				position: relative;
@@ -410,8 +423,8 @@
 			}
 
 			/**
-			* @tab Columns
-			* @section right column link
+			* tab Columns
+			* section right column link
 			* @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
 			*/
 			.rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
@@ -433,8 +446,8 @@
 			/* ========== Footer Styles ========== */
 
 			/**
-			* @tab Footer
-			* @section footer style
+			* tab Footer
+			* section footer style
 			* @tip Set the background color and borders for your email's footer area.
 			* @theme footer
 			*/
@@ -444,13 +457,13 @@
 			}
 
 			/**
-			* @tab Footer
-			* @section footer text
+			* tab Footer
+			* section footer text
 			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
 			* @theme footer
 			*/
 			.footerContent{
-				color:#808080;
+				color:#000000;
 				font-family:Verdana, sans-serif;
 				font-size:10px;
 				line-height:150%;
@@ -462,14 +475,14 @@
 			}
 
 			/**
-			* @tab Footer
-			* @section footer link
+			* tab Footer
+			* section footer link
 			* @tip Set the styling for your email's footer links. Choose a color that helps them stand out from your text.
 			*/
 			.footerContent a:link, .footerContent a:visited, /* Yahoo! Mail Override */ .footerContent a .yshortcuts, .footerContent a span /* Yahoo! Mail Override */{
-				color:#606060;
+				color:#1D4899;
 				font-weight:normal;
-				text-decoration:underline;
+				text-decoration:none;
 			}
 
 			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
@@ -480,15 +493,15 @@
                 body{width:100% !important; min-width:100% !important;} /* Prevent iOS Mail from adding padding to the body */
 
 				/* /\/\/\/\/\/\/ MOBILE RESET STYLES /\/\/\/\/\/\/ */
-				#bodyCell{padding:10px !important;}
+				#bodyCell{padding:0px !important;}
 
 				/* /\/\/\/\/\/\/ MOBILE TEMPLATE STYLES /\/\/\/\/\/\/ */
 
 				/* ======== Page Styles ======== */
 
 				/**
-				* @tab Mobile Styles
-				* @section template width
+				* tab Mobile Styles
+				* section template width
 				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
 				*/
 				#templateContainer{
@@ -497,8 +510,8 @@
 				}
 
 				/**
-				* @tab Mobile Styles
-				* @section heading 1
+				* tab Mobile Styles
+				* section heading 1
 				* @tip Make the first-level headings larger in size for better readability on small screens.
 				*/
 				h1{
@@ -507,8 +520,8 @@
 				}
 
 				/**
-				* @tab Mobile Styles
-				* @section heading 2
+				* tab Mobile Styles
+				* section heading 2
 				* @tip Make the second-level headings larger in size for better readability on small screens.
 				*/
 				h2{
@@ -517,8 +530,8 @@
 				}
 
 				/**
-				* @tab Mobile Styles
-				* @section heading 3
+				* tab Mobile Styles
+				* section heading 3
 				* @tip Make the third-level headings larger in size for better readability on small screens.
 				*/
 				h3{
@@ -527,8 +540,8 @@
 				}
 
 				/**
-				* @tab Mobile Styles
-				* @section heading 4
+				* tab Mobile Styles
+				* section heading 4
 				* @tip Make the fourth-level headings larger in size for better readability on small screens.
 				*/
 				h4{
@@ -549,8 +562,8 @@
 				}
 
 				/**
-				* @tab Mobile Styles
-				* @section header image
+				* tab Mobile Styles
+				* section header image
 				* @tip Make the main header image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
 				*/
 				#headerImage{
@@ -564,8 +577,8 @@
 				}
 
 				/**
-				* @tab Mobile Styles
-				* @section header text
+				* tab Mobile Styles
+				* section header text
 				* @tip Make the header content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 				*/
 				.headerContent{
@@ -579,6 +592,7 @@
 					padding-right: 0px;
 				}
 
+				.templateColumnContainerLeft{display:block !important; width:100% !important; margin-bottom: 13px;}
 				.templateColumnContainer{display:block !important; width:100% !important;}
 
 				.columnOne {display:block !important; width:100% !important;}
@@ -586,8 +600,8 @@
 				.columnTwoOne {display:block !important; width:100% !important;}
 
 				/**
-				* @tab Mobile Styles
-				* @section column image
+				* tab Mobile Styles
+				* section column image
 				* @tip Make the column image fluid for portrait or landscape view adaptability, and set the image's original width as the max-width. If a fluid setting doesn't work, set the image width to half its original size instead.
 				*/
 				.columnImage{
@@ -597,18 +611,18 @@
 				}
 
 				/**
-				* @tab Mobile Styles
-				* @section left column text
+				* tab Mobile Styles
+				* section left column text
 				* @tip Make the left column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 				*/
 				.leftColumnContent{
 					font-size:16px !important;
-					line-height:125% !important;
+					line-height:125% !important;					
 				}
 
 				/**
-				* @tab Mobile Styles
-				* @section right column text
+				* tab Mobile Styles
+				* section right column text
 				* @tip Make the right column content text larger in size for better readability on small screens. We recommend a font size of at least 16px.
 				*/
 				.rightColumnContent{
@@ -619,8 +633,8 @@
 				/* ======== Footer Styles ======== */
 
 				/**
-				* @tab Mobile Styles
-				* @section footer text
+				* tab Mobile Styles
+				* section footer text
 				* @tip Make the body content text larger in size for better readability on small screens.
 				*/
 				.footerContent{
@@ -645,17 +659,18 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr> 
                                             
-                                            <td valign="top" id="preheaderLeft"class="preheaderContent" style="padding-top:10px; padding-right:13px; padding-bottom:13px; padding-left:13px;" mc:edit="preheader_content00">
+                                            <td valign="top" id="preheaderLeft"class="preheaderContent" style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;" mc:edit="preheader_content00">
                                             	<!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                                 Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
                                                 <!-- *|END:IF|* -->
                                             </td>                                            
-                                            <td valign="top" id="preheaderMain" class="preheaderContent" style="padding-top:10px;" >                                           	
+                                            <td valign="top" id="preheaderMain" class="preheaderContent" style="padding-top:13px;" >                                           	
                                             	<table border="0" cellpadding="0" cellspacing="0" id="preheaderMainContent">
                                             		<tr>
                                             			<td style="padding-right:13px; padding-bottom:10px; padding-left:13px;">
-                                            				<img src="http://www.bdp-waraeger.de/newsletter_files/bundeszeichen_v03.png" style="max-width:180px;" id="logo" mc:label="preheader_image" mc:edit="preheader_image" />
-                                            			</td>
+                                            				<img src="http://cdn.pfadfinden.de/gfx/logos/bundeszeichen_1.png" style="max-width:260px;" id="logo" mc:label="preheader_image" mc:edit="preheader_image" />
+                                            			</td>                                            			
+                                            			
                                             		</tr>
                                             		<tr>
                                             			<td id="preheader_regionalleiste" style="padding-right:13px; padding-left:13px;" mc:edit="preheader_regionalleiste">
@@ -666,7 +681,7 @@
 
                                                 
                                             </td>
-                                            <td valign="top" id="preheaderRight" class="preheaderContent" style="padding-top:10px; padding-right:13px; padding-bottom:10px; padding-left:13px;" mc:edit="preheader_content02">
+                                            <td valign="top" id="preheaderRight" class="preheaderContent" style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;" mc:edit="preheader_content02">
 
                                            </td>
                                         </tr>
@@ -680,7 +695,7 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="http://www.pfadfinden.de/fileadmin/buena/teaserbilder/leitbild_ihs.jpg" style="max-width:640px;" id="headerImage" mc:label="header_image" mc:edit="header_image" />
+                                            	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:640px;" id="headerImage" mc:label="header_image" mc:edit="header_image" />
                                             	<table border="0" cellpadding="0" cellspacing="0" id="headerTitel">
                                             		<tr>
                                             			<td><h1 mc:edit="header_titel">*|MC:SUBJECT|*</h1></td>
@@ -699,10 +714,10 @@
                                     	<!-- BEGIN Two Columns With Images // -->
                                     	<tr mc:repeatable mc:variant="two columns with images">
                                         	<td align="left" valign="top" style="padding-bottom:0;">
-                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnOne">
+                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainerLeft columnOne">
                                                 	<tr>
                                                     	<td class="leftColumnContent">
-                                                        	<img src="http://www.pfadfinden.de/fileadmin/user_upload/20150609_BV15.jpg" style="max-width:274px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:274px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                         	<table border="0" cellpadding="0" cellspacing="0" class="leftColumnHeadline">
                                                         		<tr>
                                                         			<td>
@@ -724,7 +739,7 @@
                                             	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnOne">
                                                 	<tr>
                                                     	<td class="rightColumnContent">
-                                                        	<img src="http://www.pfadfinden.de/fileadmin/user_upload/singerunde.jpg" style="max-width:274px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:274px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
                                                         	<table border="0" cellpadding="0" cellspacing="0" class="rightColumnHeadline">
                                                         		<tr>
                                                         			<td>
@@ -748,11 +763,11 @@
                                         <!-- // END Two Colums With Images -->
                                         <!-- BEGIN One Column With Image // -->
                                     	<tr mc:repeatable mc:variant="one column with image">
-                                        	<td align="left" valign="top" style="padding-bottom:0; padding-top:0;">
+                                        	<td align="left" valign="top" style="padding-bottom:0;">
                                             	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwo">
                                                 	<tr>
                                                     	<td class="leftColumnContent">
-                                                        	<img src="http://www.pfadfinden.de/fileadmin/buena/teaserbilder/leitbild_ihs.jpg" style="max-width:588px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:588px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
                                                         	<table border="0" cellpadding="0" cellspacing="0" class="columnHeadline">
                                                         		<tr>
                                                         			<td>
@@ -776,10 +791,10 @@
                                         <!-- // END Ome Column With Image -->
                                         <!-- BEGIN One Column With only Text // -->
                                     	<tr mc:repeatable mc:variant="one column with only text">
-                                        	<td align="left" valign="top" style="padding-bottom:0; padding-top:0;">
+                                        	<td align="left" valign="top" style="padding-bottom:0;">
                                             	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwo">
                                                 	<tr>
-                                                    	<td class="leftColumnContent">                                                       
+                                                    	<td class="leftColumnContent" style="padding-bottom: 0px;">                                                       
                                                         	<table border="0" cellpadding="0" cellspacing="0">
                                                         		<tr>
                                                         			<td>
@@ -803,57 +818,73 @@
                                         <!-- // END Two Colums With only Text -->
 
                                         <!-- BEGIN Two Columns With image left // -->
-                                    	<tr mc:repeatable mc:variant="two columns image left">
-                                        	<td align="left" valign="top" style="padding-bottom:0; padding-top:0;">
-                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwo">
-                                                	<tr>
-                                                    	<td class="leftColumnContent columnTwoOne" style="display:block; margin-right:13px;">
-                                                        	<img src="http://www.pfadfinden.de/fileadmin/buena/teaserbilder/leitbild_ihs.jpg" style="max-width:287px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
-                                                        	<table border="0" cellpadding="0" cellspacing="0" class="columnHeadline">
-                                                        		<tr>
-                                                        			<td>
-                                                        				<h2 mc:label="column_headline" mc:edit="column_headline" style="margin:0px;">Repeatable Content</h2>
-                                                        			</td>
-                                                        		</tr>
-                                                        	</table>
-                                                        </td>                                                    
-                                                    	<td valign="top" class="rightColumnContent columnTwoOne" mc:edit="left_column_content">
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            
-                                                        </td>
-                                                    </tr>
-                                                </table>                                            	
+										<tr mc:repeatable mc:variant="two columns image left">
+                                        	<td align="left" valign="top" style="padding-bottom:0;">
+                                        		<table align="left" border="0" cellpadding="0" cellspacing="0" class="columnTwo">
+                                        			<tr>
+                                        				<td>
+			                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">
+			                                                	<tr>
+			                                                    	<td class="leftColumnContent">
+			                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:281px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+			                                                        	<table border="0" cellpadding="0" cellspacing="0" class="leftColumnHeadline">
+			                                                        		<tr>
+			                                                        			<td>
+			                                                        				<h3 mc:label="left_column_headline" mc:edit="left_column_headline" >Repeatable Content</h3>
+			                                                        			</td>
+			                                                        		</tr>
+			                                                        	</table>
+			                                                        </td>
+			                                                    </tr>
+			                                                   
+			                                                </table>
+			                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">                                                	
+			                                                    <tr>
+			                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+			                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+			                                                            <br />
+			                                                            You can also ge
+			                                                        </td>
+			                                                    </tr>
+			                                                </table>
+			                                            </td>
+			                                        </tr>
+			                                    </table>
                                             </td>
                                         </tr>
                                         <!-- // END Two Columns With image left  -->
                                         <!-- BEGIN Two Columns With image right  // -->
                                     	<tr mc:repeatable mc:variant="two columns image right">
-                                        	<td align="left" valign="top" style="padding-bottom:0; padding-top:0;">
-                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwo">
-                                                	<tr>
-                                                		<td valign="top" class="leftColumnContent columnTwoOne" mc:edit="left_column_content" style="display:block; margin-right:13px;">
-                                                			<table border="0" cellpadding="0" cellspacing="0">
-                                                        		<tr>
-                                                        			<td>
-                                                        				<h2 mc:label="left_column_headline" mc:edit="left_column_headline">Repeatable Content</h2>
-                                                        			</td>
-                                                        		</tr>
-                                                        	</table>
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                                            
-                                                        </td>
-                                                    	<td class="rightColumnContent columnTwoOne">
-                                                        	<img src="http://www.pfadfinden.de/fileadmin/buena/teaserbilder/leitbild_ihs.jpg" style="max-width:287px;" class="columnImage" mc:label="left_column_image" mc:edit="right_column_image" />
-                                                        	<table border="0" cellpadding="0" cellspacing="0" class="columnHeadline">
-                                                        		<tr>
-                                                        			<td>
-                                                        				<h2 mc:label="column_headline" mc:edit="column_headline" style="margin:0px;">Repeatable Content</h2>
-                                                        			</td>
-                                                        		</tr>
-                                                        	</table>
-                                                        </td>  
-                                                    </tr>
-                                                </table>                                            	
+                                        	<td align="left" valign="top" style="padding-bottom:0;">
+                                        		<table align="left" border="0" cellpadding="0" cellspacing="0" class="columnTwo">
+                                        			<tr>
+                                        				<td>
+                                        					<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">                                                	
+			                                                    <tr>
+			                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
+			                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+			                                                            <br />
+			                                                            You can also ge
+			                                                        </td>
+			                                                    </tr>
+			                                                </table>
+			                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">
+			                                                	<tr>
+			                                                    	<td class="leftColumnContent">
+			                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:281px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+			                                                        	<table border="0" cellpadding="0" cellspacing="0" class="leftColumnHeadline">
+			                                                        		<tr>
+			                                                        			<td>
+			                                                        				<h3 mc:label="left_column_headline" mc:edit="left_column_headline" >Repeatable Content</h3>
+			                                                        			</td>
+			                                                        		</tr>
+			                                                        	</table>
+			                                                        </td>
+			                                                    </tr>			                                                   
+			                                                </table>			                                            	
+			                                            </td>
+			                                        </tr>
+			                                    </table>
                                             </td>
                                         </tr>
                                         <!-- // END Ome Colums With Image -->

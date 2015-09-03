@@ -1,4 +1,3 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 	<head>
@@ -52,7 +51,7 @@
 				padding-top: 0px;
 				padding-left: 13px;
 				padding-right: 13px;
-				padding-bottom: 13px;
+				padding-bottom: 0px;
 			}
 
 			#templateContainer{width:640px;}
@@ -128,7 +127,7 @@
 				font-family: immenhausen, Georgia, Times New Roman, Courier, serif;
 				font-size:20px;
 				font-style:normal;
-				font-weight:bold;
+				font-weight:normal;
 				line-height:100%;
 				letter-spacing:normal;
 				margin-top:0;
@@ -452,8 +451,11 @@
 			* @theme footer
 			*/
 			#templateFooter{
-				background-color:#C4A164;
-				margin-top: 13px;				
+                background-color: #FFCB04;
+                background: transparent url("http://cdn.pfadfinden.de/gfx/objects/briefumschlag_2.png");
+                width: 640px;
+				margin-top: 13px;
+                padding: 13px 26px 0px;
 			}
 
 			/**
@@ -472,6 +474,32 @@
 				padding-bottom:13px;
 				padding-left:13px;
 				text-align:left;
+				vertical-align: top;
+			}
+			.footerHeadline {
+				font-family: Immenhausen,Georgia,Times New Roman,Courier,serif;
+				color: #FFCA28;
+				background: none;
+				font-weight: normal;
+				text-align: center;
+				font-size: 22px;
+				padding-top: 30px;
+				padding-right: 13px;
+				padding-bottom: 40px;
+				padding-left: 13px
+				display:inline;
+				overflow: hidden;
+			}
+			.footerInfo {
+				vertical-align: top;
+			}
+			.footerInfoLeftContent {
+				padding-left: 13px;
+				font-size: 10px;
+			}
+			.footerInfoRightContent {
+				padding-right: 13px;
+				font-size: 10px;
 			}
 
 			/**
@@ -632,6 +660,13 @@
 
 				/* ======== Footer Styles ======== */
 
+                #templateFooter{
+                    background: none;
+                    background-image: none;
+                    background-color: #FFCB04;
+                    width: 100%;
+                }
+
 				/**
 				* tab Mobile Styles
 				* section footer text
@@ -640,6 +675,15 @@
 				.footerContent{
 					font-size:14px !important;
 					line-height:115% !important;
+				}
+				.footerHeadline {
+					color: #1D4899; !important;
+					padding: 13px;
+				}
+
+				.footerInfo {
+					display: block;
+					width: 100%;
 				}
 
 				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
@@ -895,30 +939,48 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
-                                        <tr>
-                                            <td valign="top" class="footerContent" mc:edit="footer_content00">
-                                                <a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*">Friend on Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to Friend</a>&nbsp;
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
-                                                <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
-                                                <br />
-                                                *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
-                                                <br />
-                                                <br />
-                                                <strong>Our mailing address is:</strong>
-                                                <br />
-                                                *|HTML:LIST_ADDRESS_HTML|* *|END:IF|* 
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content02">
-                                            	<a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*">update subscription preferences</a>&nbsp;
-                                            </td>
-                                        </tr>
-                                    </table>
+                                    <table valign="top" border="0" cellpadding="0" cellspacing="0" id="templateFooter">
+										<tr>
+											<td valign="top" class="footerHeadline" mc:edit="footer_content00">
+												*|LIST:COMPANY|*
+											</td>
+										</tr>
+										<tr>
+											<td valign="top" class="footerContent">
+												<table valign="top" border="0" cellpadding="0" cellspacing="0">
+													<tr>
+														<td class="footerInfo">
+															<table valign="top" border="0" cellpadding="0" cellspacing="0" class="columnOne">
+																<tr>
+																	<td class="footerInfoLeftContent">
+																		*|LIST:DESCRIPTION|* <br>
+																		<a href="*|UNSUB|*">Melden Sie sich vom Newsletter ab</a><br>
+																		<a href="*|UPDATE_PROFILE|*">Aktualisieren Sie Ihre Benutzer Einstellungen</a>
+																	</td>
+																</tr>
+																*|IF:REWARDS|*
+																<tr>
+																	<td class="footerInfoLeftContent">
+																		*|REWARDS|*
+																	</td>
+																</tr>
+																*|END:IF|*
+															</table>
+														</td>
+														<td class="footerInfo">
+															<table valign="top "border="0" cellpadding="0" cellspacing="0" class="columnOne">
+																<tr>
+																	<td class="footerInfoRightContent">
+																		*|HTML:LIST_ADDRESS_HTML|*
+																	</td>
+																</tr>
+															</table>
+														</td>
+													</tr>
+												</table>
+											</td>
+										</tr>
+									</table>
                                     <!-- // END FOOTER -->
                                 </td>
                             </tr>

@@ -451,11 +451,17 @@
 			* @theme footer
 			*/
 			#templateFooter{
-                background-color: #FFCB04;
-                background: transparent url("http://cdn.pfadfinden.de/gfx/objects/briefumschlag_2.png");
+				background-color: transparent;
                 width: 640px;
 				margin-top: 13px;
                 padding: 13px 26px 0px;
+			}
+
+			@media only screen and (min-width: 480px) {
+				#templateFooter {
+					background-color: transparent;
+					background-image: url("http://cdn.pfadfinden.de/gfx/objects/briefumschlag_2.png");
+				}
 			}
 
 			/**
@@ -683,6 +689,14 @@
 
 				.footerInfo {
 					display: block;
+					width: 100% !important;
+				}
+
+				.footerInfoLeftContent {
+					width: 100%;
+				}
+
+				.footerInfoRightContent {
 					width: 100%;
 				}
 
@@ -939,42 +953,38 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
-                                    <table valign="top" border="0" cellpadding="0" cellspacing="0" id="templateFooter">
+									<table valign="top" border="0" cellpadding="13" cellspacing="0" id="templateFooter">
 										<tr>
 											<td valign="top" class="footerHeadline" mc:edit="footer_content00">
 												*|LIST:COMPANY|*
 											</td>
 										</tr>
 										<tr>
-											<td valign="top" class="footerContent">
-												<table valign="top" border="0" cellpadding="0" cellspacing="0">
+											<td align="left" valign="top" style="padding-bottom:0;">
+												<table align="left" border="0" cellpadding="0" cellspacing="0"
+													   class="templateColumnContainerLeft columnOne">
 													<tr>
-														<td class="footerInfo">
-															<table valign="top" border="0" cellpadding="0" cellspacing="0" class="columnOne">
-																<tr>
-																	<td class="footerInfoLeftContent">
-																		*|LIST:DESCRIPTION|* <br>
-																		<a href="*|UNSUB|*">Melden Sie sich vom Newsletter ab</a><br>
-																		<a href="*|UPDATE_PROFILE|*">Aktualisieren Sie Ihre Benutzer Einstellungen</a>
-																	</td>
-																</tr>
-																*|IF:REWARDS|*
-																<tr>
-																	<td class="footerInfoLeftContent">
-																		*|REWARDS|*
-																	</td>
-																</tr>
-																*|END:IF|*
-															</table>
+														<td class="leftColumnContent">
+															*|LIST:DESCRIPTION|* <br>
+															<a href="*|UNSUB|*">Melden Sie sich vom Newsletter
+																ab</a><br>
+															<a href="*|UPDATE_PROFILE|*">Aktualisieren Sie Ihre Benutzer
+																Einstellungen</a>
 														</td>
-														<td class="footerInfo">
-															<table valign="top "border="0" cellpadding="0" cellspacing="0" class="columnOne">
-																<tr>
-																	<td class="footerInfoRightContent">
-																		*|HTML:LIST_ADDRESS_HTML|*
-																	</td>
-																</tr>
-															</table>
+													</tr>
+													*|IF:REWARDS|*
+													<tr>
+														<td valign="top" class="leftColumnContent">
+															*|REWARDS|*
+														</td>
+													</tr>
+													*|END:IF|*
+												</table>
+												<table align="right" border="0" cellpadding="0" cellspacing="0"
+													   class="templateColumnContainer columnOne">
+													<tr>
+														<td class="rightColumnContent">
+															*|HTML:LIST_ADDRESS_HTML|*
 														</td>
 													</tr>
 												</table>

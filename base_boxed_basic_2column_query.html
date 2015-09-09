@@ -324,23 +324,21 @@
 			.templateColumnContainer{
 				display: inline;
 				background-color: #FFFFFF;
-				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-				
 			}
 
 			.templateColumnContainerLeft{
 				display: inline;
 				background-color: #FFFFFF;
-				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
-				
 			}
 
 			.columnTwo {
 				width:614px;
 				background-color: #FFFFFF;
+				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 			}
 			.columnOne {
 				width:300px;
+				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 			}
 
 			.columnTwoOne {
@@ -473,18 +471,6 @@
 			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
 			* @theme footer
 			*/
-			.footerContent{
-				color:#000000;
-				font-family:Verdana, sans-serif;
-				font-size:10px;
-				line-height:150%;
-				padding-top:13px;
-				padding-right:13px;
-				padding-bottom:13px;
-				padding-left:13px;
-				text-align:left;
-				vertical-align: top;
-			}
 			.footerHeadline {
 				font-family: Immenhausen,Georgia,Times New Roman,Courier,serif;
 				color: #FFCA28;
@@ -499,16 +485,64 @@
 				display:inline;
 				overflow: hidden;
 			}
-			.footerInfo {
-				vertical-align: top;
+
+			.footerLeft {
+				width: 300px;
 			}
-			.footerInfoLeftContent {
+
+			.leftFooterContent {
+				color: #000000;
+				font-family: Verdana, sans-serif;;
+				font-style: normal;
+				font-size: 10px;
+				line-height: 150%;
+				text-align: left;
+				padding-top: 0px;
 				padding-left: 13px;
-				font-size: 10px;
-			}
-			.footerInfoRightContent {
 				padding-right: 13px;
+				padding-bottom: 0px;
+			}
+
+			.leftFooterContent a:link, .leftFooterContent a:visited, /* Yahoo! Mail Override */
+			.leftFooterContent a .yshortcuts /* Yahoo! Mail Override */
+			{
+				color: #1D4899;
+				font-family: Georgia, serif;
+				font-weight: normal;
+				text-decoration: none;
+				font-style: italic;
+			}
+
+			.leftFooterContent a:hover {
+				text-decoration: underline;
+			}
+
+			.footerRight {
+				width: 300px;
+			}
+
+			.rightFooterContent {
+				color: #000000;
+				font-family: Verdana, sans-serif;
 				font-size: 10px;
+				line-height: 150%;
+				text-align: left;
+				padding-top: 0px;
+				padding-left: 13px;
+				padding-right: 13px;
+				padding-bottom: 0px;
+			}
+
+			.rightFooterContent a:link, .rightFooterContent a:visited, /* Yahoo! Mail Override */
+			.rightFooterContent a .yshortcuts /* Yahoo! Mail Override */
+			{
+				color: #1D4899;
+				font-weight: normal;
+				text-decoration: none;
+			}
+
+			.rightFooterContent a:hover {
+				text-decoration: underline;
 			}
 
 			/**
@@ -520,6 +554,20 @@
 				color:#1D4899;
 				font-weight:normal;
 				text-decoration:none;
+			}
+
+			.hcard-download {
+				display: none;
+			}
+
+			.org {
+				display: block;
+				padding-bottom: 5px;
+			}
+
+			.extended-address, .country-name {
+				display: inline;
+				padding-right: 3px;
 			}
 
 			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
@@ -676,31 +724,19 @@
                     width: 100%;
                 }
 
-				/**
-				* tab Mobile Styles
-				* section footer text
-				* @tip Make the body content text larger in size for better readability on small screens.
-				*/
-				.footerContent{
-					font-size:14px !important;
-					line-height:115% !important;
-				}
-				.footerHeadline {
-					color: #1D4899; !important;
-					padding: 13px;
-				}
-
-				.footerInfo {
-					display: block;
+				.footerLeft {
+					display: block !important;
 					width: 100% !important;
 				}
 
-				.footerInfoLeftContent {
-					width: 100%;
+				.footerRight {
+					display: block !important;
+					width: 100% !important;
 				}
 
-				.footerInfoRightContent {
-					width: 100%;
+				.footerHeadline {
+					color: #1D4899; !important;
+					padding: 13px;
 				}
 
 				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
@@ -965,9 +1001,9 @@
 										<tr>
 											<td align="left" valign="top" style="padding-bottom:0;">
 												<table align="left" border="0" cellpadding="0" cellspacing="0"
-													   class="templateColumnContainerLeft columnOne">
+													   class="footerLeft">
 													<tr>
-														<td class="leftColumnContent">
+														<td class="leftFooterContent">
 															*|LIST:DESCRIPTION|* <br>
 															<a href="*|UNSUB|*">Melden Sie sich vom Newsletter
 																ab</a><br>
@@ -977,17 +1013,29 @@
 													</tr>
 													*|IF:REWARDS|*
 													<tr>
-														<td valign="top" class="leftColumnContent">
+														<td valign="top" class="leftFooterContent">
 															*|REWARDS|*
 														</td>
 													</tr>
 													*|END:IF|*
 												</table>
 												<table align="right" border="0" cellpadding="0" cellspacing="0"
-													   class="templateColumnContainer columnOne">
+													   class="footerRight">
 													<tr>
-														<td class="rightColumnContent">
-															*|HTML:LIST_ADDRESS_HTML|*
+														<td class="rightFooterContent">
+															<div>
+																*|HTML:LIST_ADDRESS_HTML|*
+																*|LIST:ADDRESS|*
+																<p>Telefon: <span
+																		itemprop="telephone">*|LIST:PHONE|*</span><br/>
+																	E-Mail: <span itemprop="email"><a
+																			href="mailto:*|LIST:EMAIL|*">*|LIST:EMAIL|*</a></span><br/>
+																	Internet:&nbsp;<a href="*|LIST:URL|*"
+																					  itemprop="url">*|LIST:URL|*</a><br/>
+																	<a href="*|LIST:ADDRESS_VCARD_HREF|*">Füg uns zu
+																		deinem Adressbuch hinzu</a>
+																</p>
+															</div>
 														</td>
 													</tr>
 												</table>

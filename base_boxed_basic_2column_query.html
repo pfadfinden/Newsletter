@@ -1,5 +1,5 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:mc="http://www.w3.org/1999/xhtml">
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>*|MC:SUBJECT|*</title>
@@ -16,8 +16,17 @@
 			/* /\/\/\/\/\/\/\/\/ RESET STYLES /\/\/\/\/\/\/\/\/ */
 			body{margin:0; padding:0;}
 			img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none;}
-			table{border-collapse:collapse !important; }
-			body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+			table {
+				border-collapse: collapse !important;
+			}
+
+			body, #bodyTable, #bodyCell {
+				height: 100% !important;
+				margin: 0;
+				padding: 0;
+				width: 100% !important;
+			}
 
 			/* apply a natural box layout model to all elements, but allowing components to change */
 			html {
@@ -26,21 +35,21 @@
 				box-sizing: content-box;
 			}
 			*, *:before, *:after {
-			  box-sizing: inherit;
+				box-sizing: inherit;
 			}	
 
 			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
 
 			@font-face {
-			    font-family: 'Immenhausen';
-			    src: url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-regular-webfont.eot');
-			    src: url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.eot?#iefix') format('embedded-opentype'),
-			         url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.woff2') format('woff2'),
-			         url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.woff') format('woff'),
-			         url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.ttf') format('truetype'),
-			         url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.svg#immenhausenregular') format('svg');
-			    font-weight: normal;
-			    font-style: normal;
+				font-family: 'Immenhausen';
+				src: url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-regular-webfont.eot');
+				src: url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.eot?#iefix') format('embedded-opentype'),
+				url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.woff2') format('woff2'),
+				url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.woff') format('woff'),
+				url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.ttf') format('truetype'),
+				url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-webfont.svg#immenhausenregular') format('svg');
+				font-weight: normal;
+				font-style: normal;
 
 			}
 
@@ -124,7 +133,7 @@
 				border: 1px solid #FFCB04;
 				padding: 5px 10px;
 				display:block;
-				font-family: immenhausen, Georgia, Times New Roman, Courier, serif;
+				font-family: Immenhausen, Georgia, Times New Roman, Courier, serif;
 				font-size:20px;
 				font-style:normal;
 				font-weight:normal;
@@ -207,7 +216,7 @@
 				z-index: 500;
 
 				color:#000000;
-				font-family:Verdana, sans-serif;
+				font-family: Verdana, sans-serif;
 				font-size:20px;
 				font-weight:bold;
 				line-height:100%;
@@ -309,6 +318,7 @@
 				max-width:640px;
 				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
 				z-index: 50;
+				display: block;
 			}
 			#headerTitel {
 				display: block;
@@ -323,21 +333,21 @@
 			.templateColumnContainer{
 				display: inline;
 				background-color: #FFFFFF;
-				
 			}
 
 			.templateColumnContainerLeft{
 				display: inline;
 				background-color: #FFFFFF;
-				
 			}
 
 			.columnTwo {
 				width:614px;
 				background-color: #FFFFFF;
+				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 			}
 			.columnOne {
 				width:300px;
+				box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.1);
 			}
 
 			.columnTwoOne {
@@ -366,7 +376,7 @@
 			*/
 			.leftColumnContent{
 				color:#000000;
-				font-family:Verdana, sans-serif;
+				font-family: Verdana, sans-serif;
 				font-size:14px;
 				line-height:150%;
 				text-align:left;
@@ -404,7 +414,7 @@
 			*/
 			.rightColumnContent{
 				color:#000000;
-				font-family:Verdana, sans-serif;
+				font-family: Verdana, sans-serif;
 				font-size:14px;
 				line-height:150%;
 				text-align:left;
@@ -437,7 +447,7 @@
 			}
 
 			.leftColumnContent img, .rightColumnContent img{
-				display:inline;
+				display: block;
 				height:auto;
 				max-width:274px;
 			}
@@ -451,11 +461,20 @@
 			* @theme footer
 			*/
 			#templateFooter{
-                background-color: #FFCB04;
-                background: transparent url("http://cdn.pfadfinden.de/gfx/objects/briefumschlag_2.png");
-                width: 640px;
+				background-color: transparent;
+				width: 640px;
 				margin-top: 13px;
-                padding: 13px 26px 0px;
+				padding-top: 26px;
+				padding-left: 13px;
+				padding-right: 13px;
+				padding-bottom: 0px;
+			}
+
+			@media only screen and (min-width: 481px) {
+				#templateFooter {
+					background-color: transparent;
+					background-image: url("http://cdn.pfadfinden.de/gfx/objects/briefumschlag_2.png");
+				}
 			}
 
 			/**
@@ -464,20 +483,8 @@
 			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
 			* @theme footer
 			*/
-			.footerContent{
-				color:#000000;
-				font-family:Verdana, sans-serif;
-				font-size:10px;
-				line-height:150%;
-				padding-top:13px;
-				padding-right:13px;
-				padding-bottom:13px;
-				padding-left:13px;
-				text-align:left;
-				vertical-align: top;
-			}
 			.footerHeadline {
-				font-family: Immenhausen,Georgia,Times New Roman,Courier,serif;
+				font-family: Immenhausen, Georgia, Times New Roman, Courier, serif;
 				color: #FFCA28;
 				background: none;
 				font-weight: normal;
@@ -490,16 +497,66 @@
 				display:inline;
 				overflow: hidden;
 			}
-			.footerInfo {
-				vertical-align: top;
+
+			#leftFooter {
+				display: inline;
+				width: 300px;
 			}
-			.footerInfoLeftContent {
+
+			.leftFooterContent {
+				color: #000000;
+				font-family: Verdana, sans-serif;;
+				font-style: normal;
+				font-size: 10px;
+				line-height: 150%;
+				text-align: left;
+				padding-top: 0px;
 				padding-left: 13px;
-				font-size: 10px;
-			}
-			.footerInfoRightContent {
 				padding-right: 13px;
+				padding-bottom: 0px;
+			}
+
+			.leftFooterContent a:link, .leftFooterContent a:visited, /* Yahoo! Mail Override */
+			.leftFooterContent a .yshortcuts /* Yahoo! Mail Override */
+			{
+				color: #1D4899;
+				font-family: Georgia, serif;
+				font-weight: normal;
+				text-decoration: none;
+				font-style: italic;
+			}
+
+			.leftFooterContent a:hover {
+				text-decoration: underline;
+			}
+
+			#rightFooter {
+				display: inline;
+				width: 300px;
+			}
+
+			.rightFooterContent {
+				color: #000000;
+				font-family: Verdana, sans-serif;
 				font-size: 10px;
+				line-height: 150%;
+				text-align: left;
+				padding-top: 0px;
+				padding-left: 13px;
+				padding-right: 13px;
+				padding-bottom: 0px;
+			}
+
+			.rightFooterContent a:link, .rightFooterContent a:visited, /* Yahoo! Mail Override */
+			.rightFooterContent a .yshortcuts /* Yahoo! Mail Override */
+			{
+				color: #1D4899;
+				font-weight: normal;
+				text-decoration: none;
+			}
+
+			.rightFooterContent a:hover {
+				text-decoration: underline;
 			}
 
 			/**
@@ -512,6 +569,12 @@
 				font-weight:normal;
 				text-decoration:none;
 			}
+
+			.rightFooterContent p {
+				margin-top: 0px;
+				margin-bottom: 3px;
+			}
+
 
 			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
 
@@ -533,7 +596,7 @@
 				* @tip Make the template fluid for portrait or landscape view adaptability. If a fluid layout doesn't work for you, set the width to 300px instead.
 				*/
 				#templateContainer{
-					max-width:640px !important;
+					max-width: 480px !important;
 					width:100% !important;
 				}
 
@@ -586,7 +649,7 @@
 				#preheaderMainContent{width:100% !important;} 
 
 				#templateHeader{
-					margin-top: 0px;		
+					margin-top: 0px;
 				}
 
 				/**
@@ -661,29 +724,26 @@
 				/* ======== Footer Styles ======== */
 
                 #templateFooter{
-                    background: none;
-                    background-image: none;
-                    background-color: #FFCB04;
-                    width: 100%;
+					background: none;
+					background-image: none;
+					background-color: #FFCB04;
+					width: 100%;
                 }
 
-				/**
-				* tab Mobile Styles
-				* section footer text
-				* @tip Make the body content text larger in size for better readability on small screens.
-				*/
-				.footerContent{
-					font-size:14px !important;
-					line-height:115% !important;
-				}
-				.footerHeadline {
-					color: #1D4899; !important;
-					padding: 13px;
+				#leftFooter {
+					display: block !important;
+					width: 100% !important;
 				}
 
-				.footerInfo {
-					display: block;
-					width: 100%;
+				#rightFooter {
+					display: block !important;
+					width: 100% !important;
+				}
+
+				.footerHeadline {
+					color: #1D4899;
+				!important;
+					padding: 13px;
 				}
 
 				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
@@ -701,9 +761,11 @@
                             	<td align="center" valign="top">
                                 	<!-- BEGIN PREHEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
-                                        <tr> 
-                                            
-                                            <td valign="top" id="preheaderLeft"class="preheaderContent" style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;" mc:edit="preheader_content00">
+                                        <tr>
+
+											<td valign="top" id="preheaderLeft" class="preheaderContent"
+												style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;"
+												mc:edit="preheader_content00">
                                             	<!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                                 Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
                                                 <!-- *|END:IF|* -->
@@ -939,42 +1001,49 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
-                                    <table valign="top" border="0" cellpadding="0" cellspacing="0" id="templateFooter">
+									<table valign="top" border="0" cellpadding="13" cellspacing="0" width="100%"
+										   id="templateFooter">
 										<tr>
-											<td valign="top" class="footerHeadline" mc:edit="footer_content00">
+											<td valign="top" class="footerHeadline" mc:edit="footer_headline">
 												*|LIST:COMPANY|*
 											</td>
 										</tr>
 										<tr>
-											<td valign="top" class="footerContent">
-												<table valign="top" border="0" cellpadding="0" cellspacing="0">
+											<td align="left" valign="top" style="padding-bottom:0;">
+												<table id="leftFooter" align="left" border="0" cellpadding="0"
+													   cellspacing="0">
 													<tr>
-														<td class="footerInfo">
-															<table valign="top" border="0" cellpadding="0" cellspacing="0" class="columnOne">
-																<tr>
-																	<td class="footerInfoLeftContent">
-																		*|LIST:DESCRIPTION|* <br>
-																		<a href="*|UNSUB|*">Melden Sie sich vom Newsletter ab</a><br>
-																		<a href="*|UPDATE_PROFILE|*">Aktualisieren Sie Ihre Benutzer Einstellungen</a>
-																	</td>
-																</tr>
-																*|IF:REWARDS|*
-																<tr>
-																	<td class="footerInfoLeftContent">
-																		*|REWARDS|*
-																	</td>
-																</tr>
-																*|END:IF|*
-															</table>
+														<td class="leftFooterContent">
+															*|LIST:DESCRIPTION|* <br/>
+															<a href="*|UNSUB|*">Melden Sie sich vom Newsletter
+																ab</a><br/>
+															<a href="*|UPDATE_PROFILE|*">Aktualisieren Sie Ihre Benutzer
+																Einstellungen</a>
 														</td>
-														<td class="footerInfo">
-															<table valign="top "border="0" cellpadding="0" cellspacing="0" class="columnOne">
-																<tr>
-																	<td class="footerInfoRightContent">
-																		*|HTML:LIST_ADDRESS_HTML|*
-																	</td>
-																</tr>
-															</table>
+													</tr>
+													*|IF:REWARDS|*
+													<tr>
+														<td valign="top" class="leftFooterContent">
+															*|REWARDS|*
+														</td>
+													</tr>
+													*|END:IF|*
+												</table>
+												<table id="rightFooter" align="right" border="0" cellpadding="0"
+													   cellspacing="0">
+													<tr>
+														<td class="rightFooterContent">
+															<p>*|LIST:COMPANY|*</p>
+
+															<p mc:edit="footer_address">*|LIST:ADDRESS|*</p>
+
+															<p>Telefon: <span>*|LIST:PHONE|*</span><br/>
+																E-Mail: <span><a href="mailto:*|LIST:EMAIL|*">*|LIST:EMAIL|*</a></span><br/>
+																Internet:&nbsp;<a
+																		href="*|LIST:URL|*">*|LIST:URL|*</a><br/>
+																<a href="*|LIST:ADDRESS_VCARD_HREF|*">Füg uns zu deinem
+																	Adressbuch hinzu</a>
+																</p>
 														</td>
 													</tr>
 												</table>

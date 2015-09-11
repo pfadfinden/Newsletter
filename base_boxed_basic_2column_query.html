@@ -2,6 +2,8 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xmlns:mc="http://www.w3.org/1999/xhtml">
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
         <title>*|MC:SUBJECT|*</title>
         <link rel="stylesheet" href="http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen.css" type="text/css" charset="utf-8" />
         <style type="text/css">
@@ -659,7 +661,7 @@
 				*/
 				#headerImage{
 					height:auto !important;
-					max-width:640px !important;
+					max-width: 480px !important;
 					width:100% !important;
 				}
 				#headerTitel {
@@ -683,8 +685,18 @@
 					padding-right: 0px;
 				}
 
-				.templateColumnContainerLeft{display:block !important; width:100% !important; margin-bottom: 13px;}
-				.templateColumnContainer{display:block !important; width:100% !important;}
+				.templateColumnContainerLeft {
+					display: block !important;
+					width: 100% !important;
+					margin-bottom: 13px;
+					max-width: 480px;
+				}
+
+				.templateColumnContainer {
+					display: block !important;
+					width: 100% !important;
+					max-width: 480px;
+				}
 
 				.columnOne {display:block !important; width:100% !important;}
 				.columnTwo {display:block !important; width:100% !important;}
@@ -697,7 +709,7 @@
 				*/
 				.columnImage{
 					height:auto !important;
-					max-width:274px !important;
+					max-width: 428px !important;
 					width:100% !important;
 				}
 
@@ -728,6 +740,7 @@
 					background-image: none;
 					background-color: #FFCB04;
 					width: 100%;
+					max-width: 480px;
                 }
 
 				#leftFooter {

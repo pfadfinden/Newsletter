@@ -3,7 +3,7 @@
 	<head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <title>*|MC:SUBJECT|*</title>
         <link rel="stylesheet" href="http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen.css" type="text/css" charset="utf-8" />
         <style type="text/css">
@@ -132,7 +132,6 @@
 			h2{
 				color:#1D4899 !important;
 				background-color: #FFCA28;
-				border: 1px solid #FFCB04;
 				padding: 5px 10px;
 				display:block;
 				font-family: Immenhausen, Georgia, Times New Roman, Courier, serif;
@@ -157,7 +156,6 @@
 			h3{
 				color:#1D4899 !important;
 				background-color: #FFCA28;
-				border: 1px solid #FFCB04
 				display:block;
 				padding: 5px 10px;
 				font-family: Immenhausen, Georgia, Times New Roman, Courier, serif;
@@ -367,7 +365,7 @@
 
 			.columnHeadline {
 				position: relative;
-				margin-top: -32px;
+				margin-top: -30px;
 				z-index: 200;
 			}
 
@@ -485,7 +483,7 @@
 			* @tip Set the styling for your email's footer text. Choose a size and color that is easy to read.
 			* @theme footer
 			*/
-			.footerHeadline {
+			#footerHeadline {
 				font-family: Immenhausen, Georgia, Times New Roman, Courier, serif;
 				color: #FFCA28;
 				background: none;
@@ -739,8 +737,8 @@
 					background: none;
 					background-image: none;
 					background-color: #FFCB04;
-					width: 100%;
-					max-width: 480px;
+					width: 100% !important;
+					max-width: 480px !important;
                 }
 
 				#leftFooter {
@@ -753,9 +751,8 @@
 					width: 100% !important;
 				}
 
-				.footerHeadline {
-					color: #1D4899;
-				!important;
+				#footerHeadline {
+					color: #1D4899 !important;
 					padding: 13px;
 				}
 
@@ -1017,7 +1014,7 @@
 									<table valign="top" border="0" cellpadding="13" cellspacing="0" width="100%"
 										   id="templateFooter">
 										<tr>
-											<td valign="top" class="footerHeadline" mc:edit="footer_headline">
+											<td valign="top" id="footerHeadline" mc:edit="footer_headline">
 												*|LIST:COMPANY|*
 											</td>
 										</tr>

@@ -462,7 +462,7 @@
 			*/
 			#templateFooter{
 				background-color: transparent;
-				width: 640px;
+                width: 100%;
 				margin-top: 13px;
 				padding-top: 26px;
 				padding-left: 13px;
@@ -492,7 +492,7 @@
 				font-size: 22px;
 				padding-top: 30px;
 				padding-right: 13px;
-				padding-bottom: 40px;
+                padding-bottom: 25px;
 				padding-left: 13px
 				display:inline;
 				overflow: hidden;
@@ -515,6 +515,11 @@
 				padding-right: 13px;
 				padding-bottom: 0px;
 			}
+
+            .leftFooterContent p {
+                margin-top: 0px;
+                margin-bottom: 3px;
+            }
 
 			.leftFooterContent a:link, .leftFooterContent a:visited, /* Yahoo! Mail Override */
 			.leftFooterContent a .yshortcuts /* Yahoo! Mail Override */
@@ -574,7 +579,6 @@
 				margin-top: 0px;
 				margin-bottom: 3px;
 			}
-
 
 			/* /\/\/\/\/\/\/\/\/ MOBILE STYLES /\/\/\/\/\/\/\/\/ */
 
@@ -739,6 +743,7 @@
 					background-color: #FFCB04;
 					width: 100% !important;
 					max-width: 480px !important;
+                    padding-bottom: 13px;
                 }
 
 				#leftFooter {
@@ -772,12 +777,13 @@
                                 	<!-- BEGIN PREHEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
-
 											<td valign="top" id="preheaderLeft" class="preheaderContent"
 												style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;"
 												mc:edit="preheader_content00">
-                                            	<!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                                Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                                <!-- *|IFNOT:ARCHIVE_PAGE|* -->
+                                                Die E-Mail wird nicht korrekt angezeigt?<br/><a href="*|ARCHIVE|*"
+                                                                                                target="_blank">Im
+                                                Browser ansehen</a>.
                                                 <!-- *|END:IF|* -->
                                             </td>                                            
                                             <td valign="top" id="preheaderMain" class="preheaderContent" style="padding-top:13px;" >                                           	
@@ -790,7 +796,7 @@
                                             		</tr>
                                             		<tr>
                                             			<td id="preheader_regionalleiste" style="padding-right:13px; padding-left:13px;" mc:edit="preheader_regionalleiste">
-                                            				Stamm Waräger
+                                                            Stamm ???????
                                             			</td>
                                             		</tr>                                      		                     
                                             	</table>
@@ -1011,49 +1017,52 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
-									<table valign="top" border="0" cellpadding="13" cellspacing="0" width="100%"
-										   id="templateFooter">
+                                    <table valign="top" border="0" cellpadding="13" cellspacing="0" width="100%"
+                                           id="templateFooter">
 										<tr>
-											<td valign="top" id="footerHeadline" mc:edit="footer_headline">
-												*|LIST:COMPANY|*
+                                            <td valign="top" id="footerHeadline">
+                                                <span mc:edit="footer_headline_bund">Bund der Pfadfinderinnen und Pfadfinder</span><br/>
+                                                <span mc:edit="footer_headline_group">Stamm ????? e. V.</span>
 											</td>
 										</tr>
 										<tr>
 											<td align="left" valign="top" style="padding-bottom:0;">
-												<table id="leftFooter" align="left" border="0" cellpadding="0"
-													   cellspacing="0">
+                                                <table id="leftFooter" align="left" border="0" cellpadding="0"
+                                                       cellspacing="0">
 													<tr>
 														<td class="leftFooterContent">
-															*|LIST:DESCRIPTION|* <br/>
-															<a href="*|UNSUB|*">Melden Sie sich vom Newsletter
-																ab</a><br/>
-															<a href="*|UPDATE_PROFILE|*">Aktualisieren Sie Ihre Benutzer
-																Einstellungen</a>
-														</td>
-													</tr>
-													*|IF:REWARDS|*
-													<tr>
-														<td valign="top" class="leftFooterContent">
-															*|REWARDS|*
-														</td>
-													</tr>
-													*|END:IF|*
+                                                            <p>*|IFNOT:ARCHIVE_PAGE|*
+                                                                *|LIST:DESCRIPTION|*<br/>
+                                                                Du kannst dich von der <a href="*|UNSUB|*">Liste
+                                                                    abmelden</a>.<br/>
+                                                                Aktualisiere deine <a href="*|UPDATE_PROFILE|*">Benutzer
+                                                                    Einstellungen</a>.
+                                                                *|ELSE:|*
+                                                                Der <span mc:edit="footer_what">Stammesversand</span>
+                                                                wird an Funktionsträger und Interessierte im <span
+                                                                        mc:edit="footer_targetGroup">Landesverband</span>
+                                                                versandt.<br/>
+                                                                Du kannst dich <a href="*|LIST:SUBSCRIBE|*">hier</a> für
+                                                                die Liste anmelden.
+                                                                *|END:IF|*</p>
+                                                            *|IF:REWARDS|*
+                                                            <p>*|REWARDS|*</p>
+                                                            *|END:IF|*
 												</table>
-												<table id="rightFooter" align="right" border="0" cellpadding="0"
-													   cellspacing="0">
+                                                <table id="rightFooter" align="right" border="0" cellpadding="0"
+                                                       cellspacing="0">
 													<tr>
 														<td class="rightFooterContent">
-															<p>*|LIST:COMPANY|*</p>
-
-															<p mc:edit="footer_address">*|LIST:ADDRESS|*</p>
-
-															<p>Telefon: <span>*|LIST:PHONE|*</span><br/>
-																E-Mail: <span><a href="mailto:*|LIST:EMAIL|*">*|LIST:EMAIL|*</a></span><br/>
-																Internet:&nbsp;<a
-																		href="*|LIST:URL|*">*|LIST:URL|*</a><br/>
-																<a href="*|LIST:ADDRESS_VCARD_HREF|*">Füg uns zu deinem
-																	Adressbuch hinzu</a>
-																</p>
+                                                            <p>
+                                                                <span mc:edit="footer_company_bdp">Bund der Pfadfinderinnen und Pfadfinder</span><br/>
+                                                                <span mc:edit="footer_company_group">Stamm ?????  e. V.</span><br/>
+                                                                <span mc:edit="footer_address">*|LIST:ADDRESS|*</span><br/>
+                                                                <span mc:edit="footer_footer">*|LIST:PHONE|*</span><br/>
+                                                                <a href="*|LIST:URL|*">*|LIST:URL|*</a><br/>
+                                                                <a href="mailto:*|LIST:EMAIL|*">*|LIST:EMAIL|*</a><br/>
+                                                                <a href="*|LIST:ADDRESS_VCARD_HREF|*">Füge uns zu deinem
+                                                                    Adressbuch hinzu</a>
+                                                            </p>
 														</td>
 													</tr>
 												</table>

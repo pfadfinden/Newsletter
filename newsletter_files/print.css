@@ -1,0 +1,145 @@
+body {
+    background-color: #FFFFFF;
+    background-image: none;
+}
+
+#bodyTable {
+    background-color: #FFFFFF;
+    background-image: none;
+}
+
+/**,*:before,*:after{
+    background:transparent !important;
+    color:#000 !important;
+    box-shadow:none !important;
+    text-shadow:none !important
+}*/
+
+a, a:visited {
+    text-decoration: underline
+}
+
+a[href]:after {
+    content: " (" attr(href) ")"
+}
+
+abbr[title]:after {
+    content: " (" attr(title) ")"
+}
+
+a[href^="#"]:after, a[href^="javascript:"]:after {
+    content: ""
+}
+
+pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid
+}
+
+thead {
+    display: table-header-group
+}
+
+.templateColumnContainerLeft {
+    page-break-inside: avoid !important;
+    background-color: transparent !important;
+}
+
+.templateColumnContainer {
+    page-break-inside: avoid !important;
+    background-color: transparent !important;
+}
+
+img {
+    page-break-inside: avoid !important;
+}
+
+.columnOne {
+    box-shadow: none !important;
+}
+
+.columnTwo {
+    box-shadow: none !important;
+}
+
+.columnTwoOne {
+    box-shadow: none !important;
+}
+
+#headerImage {
+    box-shadow: none !important;
+}
+
+#preheaderMainContent {
+    box-shadow: none !important;
+}
+
+#templateColumns tr td table {
+    border-bottom: 1px solid #b8b8b8 !important;
+}
+
+#templateColumns tr td table * {
+    border-bottom: none !important;
+}
+
+h1 {
+    color: #000000 !important;
+}
+
+h2 {
+    color: #000000 !important;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+    page-break-after: avoid orphans : 3;
+    widows: 3
+}
+
+h3 {
+    color: #000000 !important;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+    page-break-after: avoid orphans : 3;
+    widows: 3
+}
+
+h4 {
+    color: #000000 !important;
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+    page-break-after: avoid
+}
+
+p {
+    color: #000000 !important;
+    orphans: 3;
+    widows: 3
+}
+
+#footerHeadline {
+    color: #000000 !important;
+}
+
+#preheader_regionalleiste {
+    color: #000000 !important;
+}
+
+#headerTitel h1 {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+}
+
+#preheader_regionalleiste {
+    background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+}
+
+#preheaderMain {
+    background: #FFFFFF !important;
+}
+
+#logo {
+    filter: grayscale(100%);
+}
+
+table {
+    border-collapse: collapse !important
+}
+
+#preheaderLeftContent {
+    display: none;
+}

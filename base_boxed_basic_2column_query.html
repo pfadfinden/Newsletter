@@ -6,6 +6,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <title>*|MC:SUBJECT|*</title>
         <link rel="stylesheet" href="http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen.css" type="text/css" charset="utf-8" />
+		<link rel="stylesheet" href="http://bdp-waraeger.de/newsletter_files/print2.css" type="text/css" media="print"
+			  charset="utf-8"/>
         <style type="text/css">
 			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
 			#outlook a{padding:0;} /* Force Outlook to provide a "view in browser" message */
@@ -41,7 +43,6 @@
 			}	
 
 			/* /\/\/\/\/\/\/\/\/ TEMPLATE STYLES /\/\/\/\/\/\/\/\/ */
-
 			@font-face {
 				font-family: 'Immenhausen';
 				src: url('http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen-regular-webfont.eot');
@@ -261,6 +262,7 @@
 				text-align:left;
 			}
 
+
 			/**
 			* tab Header
 			* section preheader link
@@ -271,6 +273,24 @@
 				font-weight:normal;
 				text-decoration:underline;
 			}
+
+			#preheaderLeftContent {
+				color: #808080;
+				font-family: Verdana, sans-serif;
+				font-size: 10px;
+				line-height: 125%;
+				text-align: left;
+			}
+
+			#preheaderLeftContent a:link, #preheaderLeftContent a:visited, /* Yahoo! Mail Override */
+			#preheaderLeftContent a .yshortcuts /* Yahoo! Mail Override */
+			{
+				color: #606060;
+				font-weight: normal;
+				text-decoration: underline;
+			}
+
+
 
 			/**
 			* tab Header
@@ -462,7 +482,7 @@
 			*/
 			#templateFooter{
 				background-color: transparent;
-                width: 100%;
+				width: 640px;
 				margin-top: 13px;
 				padding-top: 26px;
 				padding-left: 13px;
@@ -763,6 +783,155 @@
 
 				.footerContent a{display:block !important;} /* Place footer social and utility links on their own lines, for easier access */
 			}
+
+			@media print {
+				body {
+					background-color: #FFFFFF;
+					background-image: none;
+					background: transparent;
+				}
+
+				#bodyTable {
+					background-color: #FFFFFF;
+					background-image: none;
+					background: transparent;
+				}
+
+				/**,*:before,*:after{
+                    background:transparent !important;
+                    color:#000 !important;
+                    box-shadow:none !important;
+                    text-shadow:none !important
+                }*/
+				a, a:visited {
+					text-decoration: underline
+				}
+
+				a[href]:after {
+					content: " (" attr(href) ")"
+				}
+
+				abbr[title]:after {
+					content: " (" attr(title) ")"
+				}
+
+				a[href^="#"]:after, a[href^="javascript:"]:after {
+					content: ""
+				}
+
+				pre, blockquote {
+					border: 1px solid #999;
+					page-break-inside: avoid
+				}
+
+				thead {
+					display: table-header-group
+				}
+
+				.templateColumnContainerLeft {
+					page-break-inside: avoid !important;
+					background-color: transparent !important;
+				}
+
+				.templateColumnContainer {
+					page-break-inside: avoid !important;
+					background-color: transparent !important;
+				}
+
+				img {
+					page-break-inside: avoid !important;
+				}
+
+				.columnOne {
+					box-shadow: none !important;
+				}
+
+				.columnTwo {
+					box-shadow: none !important;
+				}
+
+				.columnTwoOne {
+					box-shadow: none !important;
+				}
+
+				#headerImage {
+					box-shadow: none !important;
+				}
+
+				#preheaderMainContent {
+					box-shadow: none !important;
+				}
+
+				#templateColumns tr td table {
+					border-bottom: 1px solid #b8b8b8 !important;
+				}
+
+				#templateColumns tr td table * {
+					border-bottom: none !important;
+				}
+
+				h1 {
+					color: #000000 !important;
+				}
+
+				h2 {
+					color: #000000 !important;
+					background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+					page-break-after: avoid orphans : 3;
+					widows: 3
+				}
+
+				h3 {
+					color: #000000 !important;
+					background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+					page-break-after: avoid orphans : 3;
+					widows: 3
+				}
+
+				h4 {
+					color: #000000 !important;
+					background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+					page-break-after: avoid
+				}
+
+				p {
+					color: #000000 !important;
+					orphans: 3;
+					widows: 3
+				}
+
+				#footerHeadline {
+					color: #000000 !important;
+				}
+
+				#preheader_regionalleiste {
+					color: #000000 !important;
+				}
+
+				#headerTitel h1 {
+					background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+				}
+
+				#preheader_regionalleiste {
+					background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
+				}
+
+				#preheaderMain {
+					background: #FFFFFF !important;
+				}
+
+				#logo {
+					filter: grayscale(100%);
+				}
+
+				table {
+					border-collapse: collapse !important
+				}
+
+				#preheaderLeftContent {
+					display: none;
+				}
+			}
 		</style>
     </head>
     <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
@@ -780,14 +949,24 @@
 											<td valign="top" id="preheaderLeft" class="preheaderContent"
 												style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;"
 												mc:edit="preheader_content00">
-                                                <!-- *|IFNOT:ARCHIVE_PAGE|* -->
-                                                Die E-Mail wird nicht korrekt angezeigt?<br/><a href="*|ARCHIVE|*"
-                                                                                                target="_blank">Im
-                                                Browser ansehen</a>.
-                                                <!-- *|END:IF|* -->
-                                            </td>                                            
-                                            <td valign="top" id="preheaderMain" class="preheaderContent" style="padding-top:13px;" >                                           	
-                                            	<table border="0" cellpadding="0" cellspacing="0" id="preheaderMainContent">
+												<table valign="top" border="0" cellpadding="0" cellspacing="0"
+													   width="100%" id="preheaderLeftContent">
+													<tr>
+														<td>
+															<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+															Die E-Mail wird nicht korrekt angezeigt?<br/><a
+																href="*|ARCHIVE|*" target="_blank">Im Browser
+															ansehen</a>.
+															<!-- *|END:IF|* -->
+
+														</td>
+													</tr>
+												</table>
+											</td>
+											<td valign="top" id="preheaderMain" class="preheaderContent"
+												style="padding-top:13px;">
+												<table border="0" cellpadding="0" cellspacing="0"
+													   id="preheaderMainContent">
                                             		<tr>
                                             			<td style="padding-right:13px; padding-bottom:10px; padding-left:13px;">
                                             				<img src="http://cdn.pfadfinden.de/gfx/logos/bundeszeichen_1.png" style="max-width:260px;" id="logo" mc:label="preheader_image" mc:edit="preheader_image" />
@@ -800,11 +979,8 @@
                                             			</td>
                                             		</tr>                                      		                     
                                             	</table>
-
-                                                
                                             </td>
                                             <td valign="top" id="preheaderRight" class="preheaderContent" style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;" mc:edit="preheader_content02">
-
                                            </td>
                                         </tr>
                                     </table>
@@ -916,8 +1092,8 @@
                                         	<td align="left" valign="top" style="padding-bottom:0;">
                                             	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwo">
                                                 	<tr>
-                                                    	<td class="leftColumnContent" style="padding-bottom: 0px;">                                                       
-                                                        	<table border="0" cellpadding="0" cellspacing="0">
+														<td class="leftColumnContent" style="padding-bottom: 0px;">
+															<table border="0" cellpadding="0" cellspacing="0">
                                                         		<tr>
                                                         			<td>
                                                         				<h2 mc:label="left_column_headline" mc:edit="left_column_headline">Repeatable Content</h2>
@@ -938,7 +1114,6 @@
                                             </td>
                                         </tr>
                                         <!-- // END Two Colums With only Text -->
-
                                         <!-- BEGIN Two Columns With image left // -->
 										<tr mc:repeatable mc:variant="two columns image left">
                                         	<td align="left" valign="top" style="padding-bottom:0;">
@@ -958,7 +1133,6 @@
 			                                                        	</table>
 			                                                        </td>
 			                                                    </tr>
-			                                                   
 			                                                </table>
 			                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">                                                	
 			                                                    <tr>
@@ -1017,40 +1191,40 @@
                         	<tr>
                             	<td align="center" valign="top">
                                 	<!-- BEGIN FOOTER // -->
-                                    <table valign="top" border="0" cellpadding="13" cellspacing="0" width="100%"
-                                           id="templateFooter">
+									<table valign="top" border="0" cellpadding="13" cellspacing="0" width="100%"
+										   id="templateFooter">
 										<tr>
                                             <td valign="top" id="footerHeadline">
-                                                <span mc:edit="footer_headline_bund">Bund der Pfadfinderinnen und Pfadfinder</span><br/>
+												<span mc:edit="footer_headline_bund">Bund der Pfadfinderinnen und Pfadfinder (BdP)</span><br/>
                                                 <span mc:edit="footer_headline_group">Stamm ????? e. V.</span>
 											</td>
 										</tr>
 										<tr>
 											<td align="left" valign="top" style="padding-bottom:0;">
-                                                <table id="leftFooter" align="left" border="0" cellpadding="0"
-                                                       cellspacing="0">
+												<table id="leftFooter" align="left" border="0" cellpadding="0"
+													   cellspacing="0">
 													<tr>
 														<td class="leftFooterContent">
                                                             <p>*|IFNOT:ARCHIVE_PAGE|*
                                                                 *|LIST:DESCRIPTION|*<br/>
-                                                                Du kannst dich von der <a href="*|UNSUB|*">Liste
-                                                                    abmelden</a>.<br/>
-                                                                Aktualisiere deine <a href="*|UPDATE_PROFILE|*">Benutzer
-                                                                    Einstellungen</a>.
+																Du kannst dich von der <a href="*|UNSUB|*">Liste
+																	abmelden</a>.<br/>
+																Aktualisiere deine <a href="*|UPDATE_PROFILE|*">Benutzer
+																	Einstellungen</a>.
                                                                 *|ELSE:|*
-                                                                Der <span mc:edit="footer_what">Stammesversand</span>
-                                                                wird an Funktionsträger und Interessierte im <span
-                                                                        mc:edit="footer_targetGroup">Landesverband</span>
-                                                                versandt.<br/>
-                                                                Du kannst dich <a href="*|LIST:SUBSCRIBE|*">hier</a> für
-                                                                die Liste anmelden.
+																Der <span mc:edit="footer_what">Stammesversand</span>wird
+																an Funktionsträger und Interessierte im <span
+																		mc:edit="footer_targetGroup">Landesverband</span>
+																versandt.<br/>
+																Du kannst dich <a href="*|LIST:SUBSCRIBE|*">hier</a> für
+																die Liste anmelden.
                                                                 *|END:IF|*</p>
                                                             *|IF:REWARDS|*
                                                             <p>*|REWARDS|*</p>
                                                             *|END:IF|*
 												</table>
-                                                <table id="rightFooter" align="right" border="0" cellpadding="0"
-                                                       cellspacing="0">
+												<table id="rightFooter" align="right" border="0" cellpadding="0"
+													   cellspacing="0">
 													<tr>
 														<td class="rightFooterContent">
                                                             <p>
@@ -1060,8 +1234,8 @@
                                                                 <span mc:edit="footer_footer">*|LIST:PHONE|*</span><br/>
                                                                 <a href="*|LIST:URL|*">*|LIST:URL|*</a><br/>
                                                                 <a href="mailto:*|LIST:EMAIL|*">*|LIST:EMAIL|*</a><br/>
-                                                                <a href="*|LIST:ADDRESS_VCARD_HREF|*">Füge uns zu deinem
-                                                                    Adressbuch hinzu</a>
+																<a href="*|LIST:ADDRESS_VCARD_HREF|*">Füge uns zu deinem
+																	Adressbuch hinzu</a>
                                                             </p>
 														</td>
 													</tr>

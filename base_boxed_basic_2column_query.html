@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
         <title>*|MC:SUBJECT|*</title>
         <link rel="stylesheet" href="http://cdn.pfadfinden.de/fonts/immenhausen/immenhausen.css" type="text/css" charset="utf-8" />
-		<link rel="stylesheet" href="http://cdn.pfadfinden.de/newsletter/print_1.css" type="text/css" media="print"
+		<link rel="stylesheet" href="http://www.bdp-waraeger.de/newsletter_files/print.css" type="text/css" media="print"
 			  charset="utf-8"/>
         <style type="text/css">
 			/* /\/\/\/\/\/\/\/\/ CLIENT-SPECIFIC STYLES /\/\/\/\/\/\/\/\/ */
@@ -786,42 +786,36 @@
 
 			@media print {
 				body {
-					background-color: #FFFFFF;
-					background-image: none;
-					background: transparent;
+					background-color: #FFFFFF !important;
+					background-image: none !important;
+					background: transparent !important;
 				}
 
 				#bodyTable {
-					background-color: #FFFFFF;
-					background-image: none;
-					background: transparent;
+					background-color: #FFFFFF !important;
+					background-image: none !important;
+					background: transparent !important;
 				}
 
-				/**,*:before,*:after{
-                    background:transparent !important;
-                    color:#000 !important;
-                    box-shadow:none !important;
-                    text-shadow:none !important
-                }*/
 				a, a:visited {
-					text-decoration: underline
+					text-decoration: underline !important;
 				}
 
 				a[href]:after {
-					content: " (" attr(href) ")"
+					content: " (" attr(href) ")" !important;
 				}
 
 				abbr[title]:after {
-					content: " (" attr(title) ")"
+					content: " (" attr(title) ")" !important;
 				}
 
 				a[href^="#"]:after, a[href^="javascript:"]:after {
-					content: ""
+					content: "" !important;
 				}
 
 				pre, blockquote {
 					border: 1px solid #999;
-					page-break-inside: avoid
+					page-break-inside: avoid !important;
 				}
 
 				thead {
@@ -877,27 +871,29 @@
 				h2 {
 					color: #000000 !important;
 					background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
-					page-break-after: avoid orphans : 3;
-					widows: 3
+					page-break-after: avoid !important;
+					orphans : 3 !important;
+					widows: 3 !important;
 				}
 
 				h3 {
 					color: #000000 !important;
 					background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
-					page-break-after: avoid orphans : 3;
-					widows: 3
+					page-break-after: avoid !important;
+					orphans: 3 !important;
+					widows: 3 !important;
 				}
 
 				h4 {
 					color: #000000 !important;
 					background: rgba(255, 255, 255, 0.8) none repeat scroll 0% 0% !important;
-					page-break-after: avoid
+					page-break-after: avoid !important;
 				}
 
 				p {
 					color: #000000 !important;
-					orphans: 3;
-					widows: 3
+					orphans: 3 !important;
+					widows: 3 !important;
 				}
 
 				#footerHeadline {
@@ -921,7 +917,7 @@
 				}
 
 				#logo {
-					filter: grayscale(100%);
+					filter: grayscale(100%) !important;
 				}
 
 				table {

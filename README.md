@@ -11,7 +11,7 @@ Es wird ein MailChimp Account benötigt. Dieser kann auf www.mailchimp.com koste
 5. Speichere das Template. Nun kann es unter Campaigns > Create Campaign genutzt werden.
 
 ## Update
-Das Update des Extension erfolgt durch überschreiben des HTML-Codes der Datei base_boxed_basic_2column_query.html (Paste in code)aus dem aktuellen Release (https://github.com/pfadfinden/newsletter/releases)
+Das Update des Extension erfolgt durch überschreiben des HTML-Codes der Datei base_boxed_basic_2column_query.html (Paste in code) aus dem aktuellen Release (https://github.com/pfadfinden/newsletter/releases)
 
 ## Bekannte Probleme
 Hier werden Probleme bei der Darstellung des Newsletters aufgeführt, die systembedingt nicht gelöst werden können.

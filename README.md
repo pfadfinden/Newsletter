@@ -6,8 +6,8 @@ Es wird ein MailChimp Account benötigt. Dieser kann auf www.mailchimp.com koste
 ## Installation
 1. Lade die aktuelle Version des Templates unter [Github Releases](https://github.com/pfadfinden/newsletter/releases) als `.zip` Datei herunter.
 2. Erstelle in MailChimp unter Template > Create Template ein neues Template. Importiere entweder den HTML Code aus der Datei base_boxed_basic_2column_query.html (Paste in code) oder lade die zip-Datei direkt hoch (Import HTML).
-3. Ersetze den automatischen Insert-Tag \*|LIST:COMPANY|\*  durch den Anzeigenamen, sodass dieser einzeilig dargestellt wird. (Preview benutzen!).
-4. Ersetze den automatischen Insert-Tag \*|LIST:ADDRESS|\* durch die postalische Adresse in der Form Strasse Hausnummer, PLZ Ort, DE
+3. Ersetze Stamm ????? im Header und 2x im Footer durch deinen Stamm oder Landesverband.
+4. Ersetze den automatischen Insert-Tag \*|LIST:ADDRESS|\* durch die postalische Adresse in der Form: Strasse Hausnummer, PLZ Ort, DE
 5. Speichere das Template. Nun kann es unter Campaigns > Create Campaign genutzt werden.
 
 ## Update

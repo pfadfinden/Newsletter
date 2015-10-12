@@ -1,13 +1,13 @@
 # BdP Newsletter Template für MailChimp
 
-## Vorraussetzungen
+## Voraussetzungen
 Es wird ein MailChimp Account benötigt. Dieser kann auf www.mailchimp.com kostenfrei angelegt werden.
 
 ## Installation
 1. Lade die aktuelle Version des Templates unter [Github Releases](https://github.com/pfadfinden/newsletter/releases) als `.zip` Datei herunter.
 2. Erstelle in MailChimp unter Template > Create Template ein neues Template. Importiere entweder den HTML Code aus der Datei base_boxed_basic_2column_query.html (Paste in code) oder lade die zip-Datei direkt hoch (Import HTML).
-3. Ersetze den automatischen Insert-Tag \*|LIST:COMPANY|\*  durch den Anzeigenamen, sodass dieser einzeilig dargestellt wird. (Preview benutzen!).
-4. Ersetze den automatischen Insert-Tag \*|LIST:ADDRESS|\* durch die postalische Adresse in der Form Strasse Hausnummer, PLZ Ort, DE
+3. Ersetze Stamm ????? im Header und 2x im Footer durch deinen Stamm oder Landesverband.
+4. Ersetze den automatischen Insert-Tag \*|LIST:ADDRESS|\* durch die postalische Adresse in der Form: Strasse Hausnummer, PLZ Ort, DE
 5. Speichere das Template. Nun kann es unter Campaigns > Create Campaign genutzt werden.
 
 ## Update
@@ -25,6 +25,7 @@ Hier werden Probleme bei der Darstellung des Newsletters aufgeführt, die system
 ### Darstellung in Apple Mail
 
 ### Darstellung in Roundcube Web Mail
+* Der Briefumschlag im Footer wird nicht angezeigt.
 
 ### Darstellung in Android K-9 Mail
 * Hintergrundbilder werden im dunklen Theme nicht angezeigt.
@@ -48,7 +49,9 @@ Damit eure Newsletter nicht im Spamordner landen solltet ihr folgende zwei Einst
     
 ##### DKIM (CNAME Eintrag)
 
-    k1._domainkey.bdp-waraeger.de CNAME dkim.mcsv.net
+Ersetze example.com durch eure Domain. 
+
+    k1._domainkey.example.com CNAME dkim.mcsv.net
     
 Nach ca. 24 Stunden sollten diese DNS-Änderungen im ganzen Internet verfügbar sein. Danach sollet ihr nur noch eure Domain in [Mailchimp authentifiziren](http://kb.mailchimp.com/delivery/deliverability-research/set-up-mailchimp-authentication). 
 

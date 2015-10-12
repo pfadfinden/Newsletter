@@ -61,6 +61,6 @@ CDN steht für Content Delivery Network. Es handelt sich hierbei um einen Verbun
 
 ## Lizenz
 
-Dieses E-Mail Template basiert auf den [Mailchimp email-blueprints](mailchimp/email-blueprints) und wurde modifiziert. Das BdP Newsletter Template wird unter der [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/)  ([deutsche Fassung](http://creativecommons.org/licenses/by-sa/3.0/deed.de)) veröffentlicht.
+Dieses E-Mail Template basiert auf den [Mailchimp email-blueprints](https://github.com/mailchimp/email-blueprints) und wurde modifiziert. Das BdP Newsletter Template wird unter der [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/)  ([deutsche Fassung](http://creativecommons.org/licenses/by-sa/3.0/deed.de)) veröffentlicht.
 
 

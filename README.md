@@ -59,5 +59,8 @@ Nach ca. 24 Stunden sollten diese DNS-Änderungen im ganzen Internet verfügbar 
 #### Warum werden einige Dateien über CDN Links geladen?
 CDN steht für Content Delivery Network. Es handelt sich hierbei um einen Verbund von Servern, die speziell für die Auslieferung von statischen Dateien optimiert sind. Durch Einsatz des CDN und die Wiederverwendung der selben Resourcen durch Bund und Länder wird die Darstellung des Newsletters beschleunigt. Als Standard CDN wird cdn.pfadfinden.de verwendet.
 
+## Lizenz
+
+Dieses E-Mail Template basiert auf den [Mailchimp email-blueprints](mailchimp/email-blueprints) und wurde modifiziert. Das BdP Newsletter Template wird unter der [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/)  ([deutsche Fassung](http://creativecommons.org/licenses/by-sa/3.0/deed.de)) veröffentlicht.
 
 

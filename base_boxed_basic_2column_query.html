@@ -942,18 +942,16 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
 											<td valign="top" id="preheaderLeft" class="preheaderContent"
-												style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;"
-												mc:edit="preheader_content00">
+												style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;"">
 												<table valign="top" border="0" cellpadding="0" cellspacing="0"
 													   width="100%" id="preheaderLeftContent">
 													<tr>
 														<td>
-															<!-- *|IFNOT:ARCHIVE_PAGE|* -->
+															<!--#online_version #-->
 															Die E-Mail wird nicht korrekt angezeigt?<br/><a
-																href="*|ARCHIVE|*" target="_blank">Im Browser
+																href="{ONLINE_VERSION}" target="_blank">Im Browser
 															ansehen</a>.
-															<!-- *|END:IF|* -->
-
+															<!--#/online_version#-->
 														</td>
 													</tr>
 												</table>
@@ -964,18 +962,18 @@
 													   id="preheaderMainContent">
                                             		<tr>
                                             			<td style="padding-right:13px; padding-bottom:10px; padding-left:13px;">
-                                            				<img src="http://cdn.pfadfinden.de/gfx/logos/bundeszeichen_1.png" style="max-width:260px;" id="logo" mc:label="preheader_image" mc:edit="preheader_image" />
+                                            				<img src="http://cdn.pfadfinden.de/gfx/logos/bundeszeichen_1.png" style="max-width:260px;" id="logo" />
                                             			</td>                                            			
                                             			
                                             		</tr>
                                             		<tr>
-                                            			<td id="preheader_regionalleiste" style="padding-right:13px; padding-left:13px;" mc:edit="preheader_regionalleiste">
-                                                            Stamm ???????
+                                            			<td id="preheader_regionalleiste" style="padding-right:13px; padding-left:13px;">
+                                                            <!--#text_line #-->Stamm Weiße Dose<!--#/text_line#-->   
                                             			</td>
-                                            		</tr>                                      		                     
+                                            		</tr>                                   		                     
                                             	</table>
                                             </td>
-                                            <td valign="top" id="preheaderRight" class="preheaderContent" style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;" mc:edit="preheader_content02">
+                                            <td valign="top" id="preheaderRight" class="preheaderContent" style="padding-top:13px; padding-right:13px; padding-bottom:13px; padding-left:13px;">
                                            </td>
                                         </tr>
                                     </table>
@@ -988,10 +986,10 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                            	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:640px;" id="headerImage" mc:label="header_image" mc:edit="header_image" />
+                                            	<!--#image #--><img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:640px;" id="headerImage" /><!--#/image#-->
                                             	<table border="0" cellpadding="0" cellspacing="0" id="headerTitel">
                                             		<tr>
-                                            			<td><h1 mc:edit="header_titel">*|MC:SUBJECT|*</h1></td>
+                                            			<td><h1><!--#text_line #-->Einzeilige Betreffzeile<!--#/text_line#--></h1></td>
                                             		</tr>                     
                                             	</table>
                                             </td>
@@ -1002,88 +1000,95 @@
                             </tr>
                         	<tr>
                             	<td align="center" valign="top">
-                                	<!-- BEGIN COLUMNS // -->
+                                	<!--#loop #-->
                                     <table border="0" cellpadding="13" cellspacing="0" width="100%" id="templateColumns">
-                                    	<!-- BEGIN Two Columns With Images // -->
-                                    	<tr mc:repeatable mc:variant="two columns with images">
+                                    	<!--#my_element name="BEGIN Two Columns With Images" #-->
+                                    	
+                                    	<tr>
                                         	<td align="left" valign="top" style="padding-bottom:0;">
                                             	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainerLeft columnOne">
                                                 	<tr>
                                                     	<td class="leftColumnContent">
-                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:274px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        	<!--#image #--><img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:274px;" class="columnImage" /><!--#/image#-->
                                                         	<table border="0" cellpadding="0" cellspacing="0" class="leftColumnHeadline">
                                                         		<tr>
                                                         			<td>
-                                                        				<h3 mc:label="left_column_headline" mc:edit="left_column_headline">Repeatable Content</h3>
+                                                        				<h3><!--#text_line #-->Repeatable Content<!--#/text_line#--></h3>
                                                         			</td>
                                                         		</tr>
                                                         	</table>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                    	<td valign="top" class="leftColumnContent">
+                                                            <!--#html #-->Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks.
                                                             <br />
                                                             <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.<!--#/html#-->
                                                         </td>
                                                     </tr>
                                                 </table>
                                             	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnOne">
                                                 	<tr>
                                                     	<td class="rightColumnContent">
-                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:274px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
+                                                        	<!--#image #--><img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:274px;" class="columnImage" /><!--#/image#-->
                                                         	<table border="0" cellpadding="0" cellspacing="0" class="rightColumnHeadline">
                                                         		<tr>
                                                         			<td>
-                                                        				<h3 mc:label="right_column_headline" mc:edit="right_column_headline">Repeatable Content</h3>
+                                                        				<h3><!--#text_line #-->Repeatable Content<!--#/text_line#--></h3>
                                                         			</td>
                                                         		</tr>
                                                         	</table>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                    	<td valign="top" class="rightColumnContent">
+                                                            <!--#html #-->Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks.
                                                             <br />
                                                             <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.<!--#/html#-->
                                                         </td>
                                                     </tr>
                                                 </table>
                                             </td>
                                         </tr>
-                                        <!-- // END Two Colums With Images -->
-                                        <!-- BEGIN One Column With Image // -->
-                                    	<tr mc:repeatable mc:variant="one column with image">
+										<!--#/my_element#-->
+										
+										<!--#loopsplit#-->
+                                        <!--#my_element name="One Column With Image" #-->
+                                        
+                                    	<tr>
                                         	<td align="left" valign="top" style="padding-bottom:0;">
                                             	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwo">
                                                 	<tr>
                                                     	<td class="leftColumnContent">
-                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:588px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+                                                        	<!--#image #--><img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:588px;" class="columnImage"/><!--#/image#-->
                                                         	<table border="0" cellpadding="0" cellspacing="0" class="columnHeadline">
                                                         		<tr>
                                                         			<td>
-                                                        				<h2 mc:label="column_headline" mc:edit="column_headline">Repeatable Content</h2>
+                                                        				<h2><!--#text_line #-->Repeatable Content<!--#/text_line#--></h2>
                                                         			</td>
                                                         		</tr>
                                                         	</table>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                    	<td valign="top" class="leftColumnContent">
+                                                            <!--#html #-->Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks.
                                                             <br />
                                                             <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.<!--#/html#-->
                                                         </td>
                                                     </tr>
                                                 </table>                                            	
                                             </td>
                                         </tr>
-                                        <!-- // END Ome Column With Image -->
-                                        <!-- BEGIN One Column With only Text // -->
-                                    	<tr mc:repeatable mc:variant="one column with only text">
+                                        <!--#/my_element#-->
+                                        
+                                        <!--#loopsplit#-->
+                                        <!--#my_element name="One Column With only Text" #-->
+                                        
+                                    	<tr>
                                         	<td align="left" valign="top" style="padding-bottom:0;">
                                             	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwo">
                                                 	<tr>
@@ -1091,26 +1096,29 @@
 															<table border="0" cellpadding="0" cellspacing="0">
                                                         		<tr>
                                                         			<td>
-                                                        				<h2 mc:label="left_column_headline" mc:edit="left_column_headline">Repeatable Content</h2>
+                                                        				<h2><!--#text_line #-->Repeatable Content<!--#/text_line#--></h2>
                                                         			</td>
                                                         		</tr>
                                                         	</table>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                    	<td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+                                                    	<td valign="top" class="leftColumnContent">
+                                                            <!--#html #-->Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks.
                                                             <br />
                                                             <br />
-                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
+                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.<!--#/html#-->
                                                         </td>
                                                     </tr>
                                                 </table>                                            	
                                             </td>
                                         </tr>
-                                        <!-- // END Two Colums With only Text -->
-                                        <!-- BEGIN Two Columns With image left // -->
-										<tr mc:repeatable mc:variant="two columns image left">
+                                        <!--#/my_element#-->
+                                        
+                                        <!--#loopsplit#-->
+                                        <!--#my_element name="Two Columns With image left" #-->
+                                        
+										<tr>
                                         	<td align="left" valign="top" style="padding-bottom:0;">
                                         		<table align="left" border="0" cellpadding="0" cellspacing="0" class="columnTwo">
                                         			<tr>
@@ -1118,11 +1126,11 @@
 			                                            	<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">
 			                                                	<tr>
 			                                                    	<td class="leftColumnContent">
-			                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:281px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+			                                                        	<!--#image #--><img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:281px;" class="columnImage" /><!--#/image#-->
 			                                                        	<table border="0" cellpadding="0" cellspacing="0" class="leftColumnHeadline">
 			                                                        		<tr>
 			                                                        			<td>
-			                                                        				<h3 mc:label="left_column_headline" mc:edit="left_column_headline" >Repeatable Content</h3>
+			                                                        				<h3><!--#text_line #-->Repeatable Content<!--#/text_line#--></h3>
 			                                                        			</td>
 			                                                        		</tr>
 			                                                        	</table>
@@ -1131,10 +1139,10 @@
 			                                                </table>
 			                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">                                                	
 			                                                    <tr>
-			                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-			                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+			                                                    	<td valign="top" class="rightColumnContent">
+			                                                            <!--#html #-->Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks.
 			                                                            <br />
-			                                                            You can also ge
+			                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.<!--#/html#-->
 			                                                        </td>
 			                                                    </tr>
 			                                                </table>
@@ -1143,30 +1151,33 @@
 			                                    </table>
                                             </td>
                                         </tr>
-                                        <!-- // END Two Columns With image left  -->
-                                        <!-- BEGIN Two Columns With image right  // -->
-                                    	<tr mc:repeatable mc:variant="two columns image right">
+                                        <!--#/my_element#-->
+                                        
+                                        <!--#loopsplit#-->
+                                        <!--#my_element name="Two Columns With image right" #-->
+                                        
+                                    	<tr>
                                         	<td align="left" valign="top" style="padding-bottom:0;">
                                         		<table align="left" border="0" cellpadding="0" cellspacing="0" class="columnTwo">
                                         			<tr>
                                         				<td>
                                         					<table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">                                                	
 			                                                    <tr>
-			                                                    	<td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-			                                                            <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
+			                                                    	<td valign="top" class="rightColumnContent">
+			                                                            <!--#html #-->Repeatable sections are noted with plus and minus signs so that you can add and subtract content blocks.
 			                                                            <br />
-			                                                            You can also ge
+			                                                            You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.<!--#/html#-->
 			                                                        </td>
 			                                                    </tr>
 			                                                </table>
 			                                            	<table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer columnTwoOne">
 			                                                	<tr>
 			                                                    	<td class="leftColumnContent">
-			                                                        	<img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:281px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+			                                                        	<!--#image #--><img src="http://cdn.pfadfinden.de/gfx/teaser/immenhausen_1.jpg" style="max-width:281px;" class="columnImage" /><!--#/image#-->
 			                                                        	<table border="0" cellpadding="0" cellspacing="0" class="leftColumnHeadline">
 			                                                        		<tr>
 			                                                        			<td>
-			                                                        				<h3 mc:label="left_column_headline" mc:edit="left_column_headline" >Repeatable Content</h3>
+			                                                        				<h3><!--#text_line #-->Repeatable Content<!--#/text_line#--></h3>
 			                                                        			</td>
 			                                                        		</tr>
 			                                                        	</table>
@@ -1178,9 +1189,10 @@
 			                                    </table>
                                             </td>
                                         </tr>
-                                        <!-- // END Ome Colums With Image -->
+                                        <!--#/my_element#-->
+                                        
                                     </table>
-                                    <!-- // END COLUMNS -->
+									<!--#/loop#-->
                                 </td>
                             </tr>
                         	<tr>
@@ -1190,8 +1202,8 @@
 										   id="templateFooter">
 										<tr>
                                             <td valign="top" id="footerHeadline">
-												<span mc:edit="footer_headline_bund">Bund der Pfadfinderinnen und Pfadfinder (BdP)</span><br/>
-                                                <span mc:edit="footer_headline_group">Stamm ????? e. V.</span>
+												<!--#text_line #--><span>Bund der Pfadfinderinnen und Pfadfinder (BdP)</span><br/><!--#/text_line#-->
+                                                <!--#text_line #--><span>Stamm Weiße Dose</span><!--#/text_line#-->
 											</td>
 										</tr>
 										<tr>
@@ -1207,11 +1219,11 @@
 																Aktualisiere deine <a href="*|UPDATE_PROFILE|*">Benutzer
 																	Einstellungen</a>.
                                                                 *|ELSE:|*
-																Der <span mc:edit="footer_what">Stammesversand</span> wird
+																Der <span>Stammesversand</span> wird
 																an Funktionsträger und Interessierte im <span
-																		mc:edit="footer_targetGroup">Landesverband</span>
+																		>Landesverband</span>
 																versandt.<br/>
-																Du kannst dich <a href="*|LIST:SUBSCRIBE|*">hier</a> für
+																Du kannst dich <a href="{UNSUBSCRIBE}">hier</a> für
 																die Liste anmelden.
                                                                 *|END:IF|*</p>
                                                             *|IF:REWARDS|*
@@ -1223,14 +1235,9 @@
 													<tr>
 														<td class="rightFooterContent">
                                                             <p>
-                                                                <span mc:edit="footer_company_bdp">Bund der Pfadfinderinnen und Pfadfinder</span><br/>
-                                                                <span mc:edit="footer_company_group">Stamm ?????  e. V.</span><br/>
-                                                                <span mc:edit="footer_address">*|LIST:ADDRESS|*</span><br/>
-                                                                <span mc:edit="footer_footer">*|LIST:PHONE|*</span><br/>
-                                                                <a href="*|LIST:URL|*">*|LIST:URL|*</a><br/>
-                                                                <a href="mailto:*|LIST:EMAIL|*">*|LIST:EMAIL|*</a><br/>
-																<a href="*|LIST:ADDRESS_VCARD_HREF|*">Füge uns zu deinem
-																	Adressbuch hinzu</a>
+                                                                <!--#aboutus #-->
+
+																<!--#/aboutus#-->
                                                             </p>
 														</td>
 													</tr>

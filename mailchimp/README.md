@@ -1,6 +1,6 @@
 # BdP Newsletter Template für MailChimp
 
-version: 1.0.1
+version: 1.0.2
 
 ## Voraussetzungen
 Es wird ein MailChimp Account benötigt. Dieser kann auf [mailchimp.com](//mailchimp.com/) kostenfrei angelegt werden.

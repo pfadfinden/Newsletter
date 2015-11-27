@@ -1,6 +1,6 @@
 # Bund der Pfadfinderinnen und Pfadfinder (BdP) - Newsletter Template
 
-version: 1.0.1
+version: 1.0.2
 
 ## Bekannte Probleme
 Hier werden Probleme bei der Darstellung des Newsletters aufgeführt, die systembedingt nicht gelöst werden können.
